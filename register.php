@@ -8,8 +8,14 @@
 
 <?php
 
+include ("includes/classes/Account.php");
+
+$account = new Account();
+$account -> register();
+
 include("includes/handlers/reg_handler.php");
-include("includes/handlers/login_handler.php")
+include("includes/handlers/login_handler.php");
+
 
 ?>
 

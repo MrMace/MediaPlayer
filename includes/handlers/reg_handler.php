@@ -49,28 +49,6 @@ function sanitizePasswordForm($inputText)
 
 
 
-function usernameValidation($userN){
-
-
-}
-
-function firstNameValidation ($firstN){
-
-
-}
-function lastNameValidation ($lastN){
-
-
-}
-function emailValidation ($em, $emC){
-
-
-}
-function passwordValidation ($passW, $passW2){
-
-
-}
-
 //if registration button is pressed
 if (isset($_POST['regBtn'])) {
     //stores the info for username
@@ -94,13 +72,6 @@ if (isset($_POST['regBtn'])) {
     //password confirm stored info
     $passwordConfirm = sanitizePasswordForm($_POST['passwordConfirm']);
 
-
-    //called validations
-    usernameValidation($username);
-    firstNameValidation($firstName);
-    lastNameValidation($lastName);
-    emailValidation($email, $emailConfirm);
-    passwordValidation($password, $passwordConfirm);
 
 
 
