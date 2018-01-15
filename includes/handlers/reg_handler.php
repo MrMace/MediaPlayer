@@ -39,7 +39,6 @@ function sanitizeStringForm($inputText)
 //password sanitize
 function sanitizePasswordForm($inputText)
 {
-
     //makes sure cannot add elements and such to database.
     $inputText = strip_tags($inputText);
     //returns
@@ -72,8 +71,11 @@ if (isset($_POST['regBtn'])) {
     //password confirm stored info
     $passwordConfirm = sanitizePasswordForm($_POST['passwordConfirm']);
 
+   $wasSuccessful =  $account -> register($username, $firstName, $lastName, $email, $emailConfirm, $password, $passwordConfirm);
 
-
+    if($wasSuccessful == true) {
+        header("Location: index.php");
+    }
 
 }
 
