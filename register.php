@@ -75,8 +75,8 @@ include("includes/handlers/login_handler.php");
         <!--        email address-->
 
         <p>
-            <?php echo $account->getError("Your username is to long, please keep it under 20 characters."); ?>
-            <?php echo $account->getError("Your username is to short, please use more than 5 characters."); ?>
+            <?php echo $account->getError("Your emails do not match!"); ?>
+            <?php echo $account->getError("Your email is not in the correct format! Please use correct format e.g. example@website.com"); ?>
             <label for="email">Email:</label>
             <input id="email" name="email" type="email" placeholder="Your Email" required>
         </p>
@@ -90,6 +90,10 @@ include("includes/handlers/login_handler.php");
 
 
         <p>
+            <?php echo $account->getError("Your passwords do not match!"); ?>
+            <?php echo $account->getError("Your password must only contain numbers and letters."); ?>
+            <?php echo $account->getError("Please make your password less than 50 characters"); ?>
+            <?php echo $account->getError("Please make your password longer than 6 characters"); ?>
             <label for="password">Password:</label>
             <input id="password" name="password" type="password" placeholder="Password" required>
         </p>
