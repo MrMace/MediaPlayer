@@ -8,12 +8,14 @@
 
 class Account
 {
-
+    private $connection;
     private $errorArray;
 
-    public function __construct() {
-
+    public function __construct($connection)
+    {
+        $this->connection = $connection;
         $this->errorArray = array();
+
 
 
     }
@@ -30,8 +32,24 @@ class Account
 
         if (empty($this->errorArray) == true) {
             //stuff goes to database
-            return true;
+            return $this->insertUserDetails($userN, $firstN, $lastN, $em, $pass);
         } else {
+            return false;
+        }
+
+    }
+
+
+    public function login($userN, $pass)
+    {
+
+        $pass = md5($pass);
+        $query = mysqli_query($this->connection, "SELECT * FROM users WHERE username='$userN' AND password='$pass'");
+
+        if (mysqli_num_rows($query) == 1) {
+            return ture;
+        } else {
+            array_push($this->errorArray, Constants:: $loginFailed);
             return false;
         }
 
@@ -43,6 +61,17 @@ class Account
             $error = "";
         }
         return "<span class='errorMessage'>$error</span>";
+    }
+
+    private function insertUserDetails($userN, $firstN, $lastN, $em, $pass)
+    {
+//p encryption
+        $encryptedPW = md5($pass);
+        $profilePic = "assets/images/profile_pics/profile_placeholder.jpg";
+        $date = date("Y-m-d");
+
+        $result = mysqli_query($this->connection, "INSERT INTO users VALUES('', '$userN', '$firstN', '$lastN', '$em', '$encryptedPW', '$date' , '$profilePic')");
+        return $result;
     }
 
     private function usernameValidation($userN) {
@@ -57,6 +86,12 @@ class Account
         }
 
         // Need to create username check if already exsists.---------------------------------------------------------------------------------------
+        $checkUserNameQuery = mysqli_query($this->connection, "SELECT username FROM users WHERE username='$userN'");
+
+        if (mysqli_num_rows($checkUserNameQuery) != 0) {
+            array_push($this->errorArray, Constants::$usernameTaken);
+            return;
+        }
 
     }
 
@@ -102,7 +137,13 @@ class Account
 
         }
 
-        // Need to create user check if already exsists.----------------------------------------------------------------------------------------------
+        // Need to create user check if email already exsists.----------------------------------------------------------------------------------------------
+        $checkEmailQuery = mysqli_query($this->connection, "SELECT email FROM users WHERE email='$em'");
+
+        if (mysqli_num_rows($checkEmailQuery) != 0) {
+            array_push($this->errorArray, Constants::$emailTaken);
+            return;
+        }
 
     }
 
