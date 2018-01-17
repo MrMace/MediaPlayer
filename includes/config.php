@@ -8,6 +8,8 @@
 
 
 ob_start();
+//session start
+session_start();
 
 
 //add a little additional security
