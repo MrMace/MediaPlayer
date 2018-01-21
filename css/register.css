@@ -1,0 +1,157 @@
+html, body {
+    padding: 0;
+    margin: 0;
+    height: 100%;
+}
+
+#background {
+    background-color: #150817;
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("../assets/images/backgroundImg/register.jpeg");
+    /*background-image: url("../images/backgroundImg/register.jpeg");*/
+    background-position: center;
+    -webkit-background-size: cover;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: table;
+    height: 100%;
+    width: 100%;
+}
+
+#loginContainer * {
+    color: whitesmoke;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-weight: normal;
+    line-height: 2em;
+    box-sizing: border-box;
+}
+
+#loginContainer {
+    width: 90%;
+    margin: 0 auto;
+    /*position: relative;*/
+    max-width: 1024px;
+}
+
+#inputContainer {
+    max-width: 500px;
+    padding: 40px;
+    margin: auto;
+    /*float: left;*/
+}
+
+#inputContainer h2 {
+    text-align: center;
+}
+
+#inputContainer input[type="text"],
+#inputContainer input[type="password"],
+#inputContainer input[type="email"] {
+    background: transparent;
+    border: 0;
+    border-bottom: 1px solid whitesmoke;
+    line-height: 30px;
+    height: 30px;
+    display: block;
+    width: 100%;
+
+}
+
+::-webkit-input-placeholder { /* WebKit, Blink, Edge */
+    color: whitesmoke;
+    font-family: Snell Roundhand cursive;
+    font-size: 15px;
+}
+
+:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+    color: whitesmoke;
+    opacity: 1;
+    font-family: Snell Roundhand cursive;
+    font-size: 15px;
+}
+
+::-moz-placeholder { /* Mozilla Firefox 19+ */
+    color: whitesmoke;
+    opacity: 1;
+    font-family: Snell Roundhand cursive;
+    font-size: 15px;
+
+}
+
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+    color: whitesmoke;
+    font-family: Snell Roundhand cursive;
+    font-size: 15px;
+
+}
+
+:-ms-input-placeholder { /* Microsoft Edge */
+    color: whitesmoke;
+    font-family: Snell Roundhand cursive;
+    font-size: 15px;
+
+}
+
+::placeholder { /* Most modern browsers support this now. */
+    color: whitesmoke;
+    font-family: Snell Roundhand cursive;
+    font-size: 15px;
+
+}
+
+#inputContainer label {
+    color: #cccccc;
+    font-size: 10px;
+    margin-top: 15px;
+}
+
+#inputContainer button {
+    background-color: transparent;
+    -webkit-border-radius: 100px;
+    -moz-border-radius: 100px;
+    border-radius: 5px;
+    border: 1.5px solid whitesmoke;
+    color: whitesmoke;
+    display: block;
+    font-size: 15px;
+    letter-spacing: 1px;
+    margin: 20px auto;
+    height: 40px;
+    width: 98%;
+}
+
+#inputContainer button:hover {
+    background-color: purple;
+    font-size: 15px;
+    letter-spacing: 1px;
+    margin: 20px auto;
+    height: 45px;
+    width: 100%;
+    cursor: pointer;
+}
+
+.haveAccountText {
+    text-align: center;
+}
+
+.haveAccountText span {
+    font-weight: bold;
+    font-size: 10px;
+}
+
+.haveAccountText span:hover {
+    font-size: 13px;
+    cursor: pointer;
+
+}
+
+#registerForm,
+#loginForm {
+    display: none;
+}
+
+#loginContainer .errorMessage {
+    color: red;
+    display: block;
+
+}
+

@@ -132,7 +132,7 @@ class Account
         }
         //Verifies in correct format EMAIL
         if (!filter_var($em, FILTER_VALIDATE_EMAIL)) {
-            array_push($this->errorArray, "Your email is not in the correct format! Please use correct format e.g. example@website.com");
+            array_push($this->errorArray, "Your email is not in the correct format! Please use correct format e.g. example@website.com.");
             return;
 
         }
@@ -164,10 +164,10 @@ class Account
 
         //Cehcks length
         if (strlen($pass) > 50) {
-            array_push($this->errorArray, "Please make your password less than 50 characters");
+            array_push($this->errorArray, "Please make your password less than 50 characters.");
             return;
         } if (strlen($pass) < 5) {
-            array_push($this->errorArray, "Please make your password longer than 6 characters");
+        array_push($this->errorArray, "Please make your password longer than 6 characters.");
             return;
         }
 
