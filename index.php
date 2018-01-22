@@ -25,8 +25,15 @@ if (isset($_SESSION['userLoggedIn'])) {
 <html>
 <head>
     <title>Mace Media Player</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
 <body>
+
+
+<div id="mediaPlayerBarContain">
+
+
+</div>
 
 </body>
 </html>

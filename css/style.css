@@ -1,0 +1,13 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+#mediaPlayerBarContain {
+    background-color: #150817;
+    bottom: 0;
+    position: fixed;
+    height: 100px;
+    width: 100%;
+}
