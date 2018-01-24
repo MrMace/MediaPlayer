@@ -4,10 +4,154 @@ html, body {
     height: 100%;
 }
 
+* {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    color: whitesmoke;
+}
+
 #mediaPlayerBarContain {
     background-color: #150817;
     bottom: 0;
     position: fixed;
-    height: 100px;
     width: 100%;
+}
+
+#mediaPlayerBar {
+    height: 80px;
+    padding: 15px;
+    box-sizing: border-box;
+    display: flex;
+}
+
+#mediaPlayerBar .content {
+    height: 60px;
+    width: 100%;
+
+}
+
+#playerLeft .albumImage {
+    max-width: 60px;
+    height: 100%;
+    margin-right: 15px;
+    float: left;
+    background-size: cover;
+}
+
+#playerLeft .albumInfo {
+    display: table;
+}
+
+#playerLeft .albumInfo .trackName {
+    width: 100%;
+    margin: 5px 0;
+    display: inline-block;
+}
+
+#playerLeft .albumInfo .artistName span {
+    font-size: 12px;
+    color: whitesmoke;
+}
+
+#playerCenter {
+    width: 40%;
+    max-width: 700px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+#playerLeft, #playerRight {
+    width: 30%;
+    min-width: 180px;
+}
+
+.playerControls .btns {
+    margin: 0 auto;
+    display: table;
+}
+
+.btns .controlBtn {
+    background-color: transparent;
+    border: none;
+    vertical-align: middle;
+
+}
+
+.controlBtn {
+    background-color: transparent;
+    border: none;
+    /*vertical-align: middle;*/
+}
+
+.controlBtn.volume {
+    display: flex;
+}
+
+.btns .controlBtn img {
+    width: 25px;
+    height: 25px;
+}
+
+.btns .controlBtn.play img,
+.controlBtn.play img {
+    width: 35px;
+    height: 35px;
+}
+
+.controlBtn:hover {
+    cursor: pointer;
+}
+
+.progressTime {
+    color: whitesmoke;
+    font-size: 12px;
+    min-width: 40px;
+    text-align: center;
+}
+
+.playbackBar {
+    display: flex;
+}
+
+.progressBar {
+    width: 100%;
+    height: 12px;
+    display: inline-flex;
+    cursor: pointer;
+}
+
+.progressBarBG {
+    background-color: #404040;
+    border-radius: 2px;
+    height: 5px;
+    width: 100%;
+}
+
+.progress {
+    background-color: purple;
+    height: 5px;
+    width: 0;
+    border-radius: 2px;
+}
+
+.playbackBar .progressBar {
+    margin-top: 5px;
+}
+
+.volBar {
+    width: 180px;
+    position: absolute;
+    right: 0;
+}
+
+.volBar .progressBar {
+    width: 125px;
+    margin-top: 10px;
+    margin-left: 5px;
+}
+
+#playerRight {
+    position: relative;
+    margin-top: 10px;
 }
