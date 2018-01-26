@@ -29,77 +29,128 @@ if (isset($_SESSION['userLoggedIn'])) {
 <body>
 
 
-<div id="mediaPlayerBarContain">
+<div id="mainContainer">
 
-    <div id="mediaPlayerBar">
+    <div id="containerTop">
+        <div id="navBarContainer">
+            <nav class="navBar">
+                <a href="index.php" class="logo">
+                    <img src="assets/images/icons/Logo.png" ">
+                </a>
 
-        <div id="playerLeft">
-            <div class="content">
+
+                <div class="sectionGroup">
+
+                    <div class="navBtn">
+                        <a href="search.php" class="navBtnLink">
+                            Search
+                            <img src="assets/images/icons/search.png" class="icon" alt="Search"
+                        </a>
+                    </div>
+
+                </div>
+
+                <div class="sectionGroup">
+
+                    <div class="navBtn">
+                        <a href="profile.php" class="navBtnLink">
+                            USER
+                        </a>
+                    </div>
+
+                    <div class="navBtn">
+                        <a href="yourMusic.php" class="navBtnLink">
+                            Your Music
+                        </a>
+                    </div>
+                    <div class="navBtn">
+                        <a href="browse.php" class="navBtnLink">
+                            Browse
+                        </a>
+                    </div>
+
+
+                </div>
+
+
+            </nav>
+
+        </div>
+    </div>
+
+    <div id="mediaPlayerBarContain">
+
+        <div id="mediaPlayerBar">
+
+            <div id="playerLeft">
+                <div class="content">
                 <span class="albumLink">
                     <img src="assets/images/placeHolder/albumPlaceholder.jpeg" class="albumImage">
                 </span>
-                <div class="albumInfo">
+                    <div class="albumInfo">
                     <span class="trackName">
                         <span>Song Name</span>
                     </span>
-                    <span class="artistName">
+                        <span class="artistName">
                         <span>Artist Name</span>
                     </span>
+                    </div>
                 </div>
+
             </div>
 
-        </div>
+            <div id="playerCenter">
+                <div class="content playerControls">
+                    <div class="btns">
+                        <button class="controlBtn shuffle" title="Shuffle Button">
+                            <img src="assets/images/icons/shuffleBtn.png" alt="shuffle">
+                        </button>
 
-        <div id="playerCenter">
-            <div class="content playerControls">
-                <div class="btns">
-                    <button class="controlBtn shuffle" title="Shuffle Button">
-                        <img src="assets/images/icons/shuffleBtn.png" alt="shuffle">
-                    </button>
+                        <button class="controlBtn previous" title="Previous Button">
+                            <img src="assets/images/icons/backBtn.png" alt="previous">
+                        </button>
 
-                    <button class="controlBtn previous" title="Previous Button">
-                        <img src="assets/images/icons/backBtn.png" alt="previous">
-                    </button>
+                        <button class="controlBtn play" title="Play Button">
+                            <img src="assets/images/icons/playBtn.png" alt="play">
+                        </button>
 
-                    <button class="controlBtn play" title="Play Button">
-                        <img src="assets/images/icons/playBtn.png" alt="play">
-                    </button>
+                        <button class="controlBtn pause" title="Pause Button" style="display: none">
+                            <img src="assets/images/icons/pauseBtn.png" alt="pause">
+                        </button>
 
-                    <button class="controlBtn pause" title="Pause Button" style="display: none">
-                        <img src="assets/images/icons/pauseBtn.png" alt="pause">
-                    </button>
+                        <button class="controlBtn next" title="Next Button">
+                            <img src="assets/images/icons/nextBtn.png" alt="next">
+                        </button>
 
-                    <button class="controlBtn next" title="Next Button">
-                        <img src="assets/images/icons/nextBtn.png" alt="next">
-                    </button>
-
-                    <button class="controlBtn repeat" title="Repeat Button">
-                        <img src="assets/images/icons/repeatBtn.png" alt="repeat">
-                    </button>
+                        <button class="controlBtn repeat" title="Repeat Button">
+                            <img src="assets/images/icons/repeatBtn.png" alt="repeat">
+                        </button>
+                    </div>
+                    <div class="playbackBar">
+                        <span class="progressTime current">0.00</span>
+                        <div class="progressBar">
+                            <div class="progressBarBG">
+                                <div class="progress"></div>
+                            </div>
+                        </div>
+                        <span class="progressTime remaining">0.00</span>
+                    </div>
                 </div>
-                <div class="playbackBar">
-                    <span class="progressTime current">0.00</span>
+
+            </div>
+
+            <div id="playerRight">
+                <div class="volBar">
+                    <button class="controlBtn volume" title="Volume Button">
+                        <img src="assets/images/icons/MaxVolBtn.png" alt="Volume"
+                    </button>
+
                     <div class="progressBar">
                         <div class="progressBarBG">
                             <div class="progress"></div>
                         </div>
                     </div>
-                    <span class="progressTime remaining">0.00</span>
-                </div>
-            </div>
 
-        </div>
-
-        <div id="playerRight">
-            <div class="volBar">
-                <button class="controlBtn volume" title="Volume Button">
-                    <img src="assets/images/icons/MaxVolBtn.png" alt="Volume"
-                </button>
-
-                <div class="progressBar">
-                    <div class="progressBarBG">
-                        <div class="progress"></div>
-                    </div>
                 </div>
 
             </div>
@@ -107,8 +158,8 @@ if (isset($_SESSION['userLoggedIn'])) {
         </div>
 
     </div>
-
 </div>
+
 
 </body>
 </html>

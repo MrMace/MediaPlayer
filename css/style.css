@@ -9,6 +9,16 @@ html, body {
     color: whitesmoke;
 }
 
+/*-------------------------------Top container---------------------------------------------*/
+
+#containerTop {
+    min-height: 100%;
+    width: 100%;
+
+}
+
+/*------------------------------------------------------------------media player controls--------------------------*/
+
 #mediaPlayerBarContain {
     background-color: #150817;
     bottom: 0;
@@ -17,7 +27,7 @@ html, body {
 }
 
 #mediaPlayerBar {
-    height: 80px;
+    height: 90px;
     padding: 15px;
     box-sizing: border-box;
     display: flex;
@@ -155,3 +165,58 @@ html, body {
     position: relative;
     margin-top: 10px;
 }
+
+/*----------------------------------------nav Bar-----------------------------------------------*/
+
+#navBarContainer {
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.07);
+    width: 250px;
+    height: 100vh;
+}
+
+.navBar {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    align-content: center;
+}
+
+.logo {
+    margin: auto;
+}
+
+.icon {
+    width: 25px;
+    right: 0;
+    top: 5px;
+    position: absolute;
+
+}
+
+.navBar .sectionGroup {
+    padding: 10px 0;
+}
+
+.navBtn {
+    display: block;
+    color: whitesmoke;
+    padding: 10px;
+    font-size: 18px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    position: relative;
+}
+
+.navBtnLink {
+    text-decoration: none;
+
+}
+
+.navBtnLink:hover {
+    color: purple;
+}
+
+/*----------------*/
