@@ -4,6 +4,12 @@ html, body {
     height: 100%;
 }
 
+body {
+    background-color: rgba(1, 1, 2, 0.85);
+    font-size: 14px;
+    width: auto;
+}
+
 * {
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
     color: whitesmoke;
@@ -15,6 +21,24 @@ html, body {
     min-height: 100%;
     width: 100%;
 
+}
+
+/*Main Content Area*/
+
+#mainScreenContainer {
+    background-color: white;
+    /*margin-left: 15%;*/
+    padding-bottom: 90px;
+    width: 100%;
+
+}
+
+#mainContent {
+    padding: 0 20px;
+    background-color: pink;
+    width: 50px;
+    height: 10px;
+    margin-left: 250px;
 }
 
 /*------------------------------------------------------------------media player controls--------------------------*/
@@ -73,7 +97,7 @@ html, body {
 
 #playerLeft, #playerRight {
     width: 30%;
-    min-width: 180px;
+    min-width: 138px;
 }
 
 .playerControls .btns {
@@ -99,14 +123,14 @@ html, body {
 }
 
 .btns .controlBtn img {
-    width: 25px;
-    height: 25px;
+    width: 100%;
+    height: auto;
 }
 
 .btns .controlBtn.play img,
 .controlBtn.play img {
-    width: 35px;
-    height: 35px;
+    width: 110%;
+    height: auto;
 }
 
 .controlBtn:hover {
@@ -173,7 +197,8 @@ html, body {
     top: 0;
     left: 0;
     background-color: rgba(0, 0, 0, 0.07);
-    width: 250px;
+    min-width: 167px;
+    width: 15%;
     height: 100vh;
 }
 
