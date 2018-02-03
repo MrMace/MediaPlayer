@@ -23,11 +23,11 @@ body {
 
 }
 
-/*Main Content Area*/
+/*Main Content Area                                                                                           ADJUSTMENTS NEEDED*/
 
 #mainScreenContainer {
     background-color: white;
-    /*margin-left: 15%;*/
+    margin-left: 15%;
     padding-bottom: 90px;
     width: 100%;
 
@@ -36,9 +36,7 @@ body {
 #mainContent {
     padding: 0 20px;
     background-color: pink;
-    width: 50px;
-    height: 10px;
-    margin-left: 250px;
+
 }
 
 /*------------------------------------------------------------------media player controls--------------------------*/
