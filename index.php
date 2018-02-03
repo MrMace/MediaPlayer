@@ -12,10 +12,21 @@
 
 <div class="gridContainer">
 
-    <?php $queryAlbum = mysqli_query($connection, "SELECT * FROM albums");
+    <?php $queryAlbum = mysqli_query($connection, "SELECT * FROM albums ORDER BY RAND() LIMIT 6");
 
     while ($row = mysqli_fetch_array($queryAlbum)) {
-        echo $row['title'] . "<br>";
+
+
+        echo "<div class='gridItem'>  
+<a href='album.php?id=" . $row['id'] . "'>
+   <img src='" . $row['art'] . "'>
+   
+   
+  <div class='gridItemInfo'>  "
+            . $row['title'] .
+            "</div> </a></div>";
+
+
 
     }
     ?>

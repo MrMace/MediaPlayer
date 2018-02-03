@@ -12,6 +12,7 @@ body {
 
 * {
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    letter-spacing: 1px;
     color: whitesmoke;
 }
 
@@ -26,16 +27,50 @@ body {
 /*Main Content Area                                                                                           ADJUSTMENTS NEEDED*/
 
 #mainScreenContainer {
-    background-color: white;
-    margin-left: 15%;
+    background-color: #272727;
+    margin-left: 270px;
     padding-bottom: 90px;
-    width: 100%;
+    width: calc(100% - 270px);
+    /*min-width:calc(100% - 167px);*/
+    /*max-width:calc(100%  - 270px);*/
 
 }
 
 #mainContent {
     padding: 0 20px;
-    background-color: pink;
+
+}
+
+.pageHeaderH1 {
+    padding: 25px;
+    text-align: center;
+}
+
+.gridItem {
+    display: inline-block;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    width: 30%;
+    max-width: 250px;
+    min-width: 150px;
+
+}
+
+.gridItem a {
+    text-decoration: none;
+}
+
+.gridItem img {
+    width: 100%;
+}
+
+.gridItemInfo {
+    font-weight: 400;
+    padding: 5px 0;
+    text-align: center;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
 
 }
 
@@ -196,7 +231,8 @@ body {
     left: 0;
     background-color: rgba(0, 0, 0, 0.07);
     min-width: 167px;
-    width: 15%;
+
+    width: 270px;
     height: 100vh;
 }
 
