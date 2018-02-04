@@ -14,7 +14,7 @@ class Album
     private $title;
     private $artistId;
     private $genre;
-    private $ar;
+    private $art;
 
     public function __construct($connection, $id)
     {
@@ -28,7 +28,7 @@ class Album
         $this->title = $album['title'];
         $this->artistId = $album['artist'];
         $this->genre = $album['genre'];
-        $this->artwork = $album['art'];
+        $this->art = $album['art'];
     }
 
     public function getTitle()
@@ -44,10 +44,10 @@ class Album
         return new Artist($this->connection, $this->artistId);
     }
 
-    public function getArtwork()
+    public function getArt()
     {
 
-        return $this->artwork;
+        return $this->art;
     }
 
     public function getGenre()
