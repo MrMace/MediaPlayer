@@ -18,15 +18,12 @@ if (isset($_GET['id'])) {
     header("Location: index.php");
 }
 
-$queryAlbum = mysqli_query($connection, "SELECT * FROM albums WHERE id='$albumId'");
+$album = new Album($connection, $albumId);
 
-$album = mysqli_fetch_array($queryAlbum);
-
-
-$artist = new Artist($connection, $album['artist']);
+$artist = $album->getArtist();
 
 
-echo $album['title'] . "<br>";
+echo $album->getTitle() . "<br>";
 echo $artist->getName();
 ?>
 
