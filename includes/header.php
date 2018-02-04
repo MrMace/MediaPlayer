@@ -12,6 +12,7 @@
 <?php
 
 include("includes/config.php");
+include("includes/classes/Artist.php");
 
 //log user out on refresh
 //session_destroy();
