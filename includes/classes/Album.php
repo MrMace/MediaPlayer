@@ -56,6 +56,12 @@ class Album
         return $this->genre;
     }
 
+    public function getAlbumNumSongs()
+    {
+        $query = mysqli_query($this->connection, "SELECT id FROM songs WHERE album='$this->id'");
+        return mysqli_num_rows($query);
+    }
+
 }
 
 

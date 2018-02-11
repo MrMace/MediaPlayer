@@ -31,8 +31,6 @@ body {
     margin-left: 270px;
     padding-bottom: 90px;
     width: calc(100% - 270px);
-    /*min-width:calc(100% - 167px);*/
-    /*max-width:calc(100%  - 270px);*/
 
 }
 
@@ -279,3 +277,38 @@ body {
 }
 
 /*----------------*/
+
+.albumTopInfo {
+    display: inline-block;
+    padding: 40px 0 10px 0;
+    width: 100%;
+
+}
+
+.albumTopInfo .albumSectionLeft {
+    float: left;
+    width: 29%;
+    max-width: 250px;
+
+}
+
+.albumTopInfo .albumSectionLeft img {
+    width: 100%;
+}
+
+.albumTopInfo .albumSectionRight {
+    width: 70%;
+    float: left;
+    padding: 5px 10px 5px 40px;
+    box-sizing: border-box;
+}
+
+.albumTopInfo .albumSectionRight h1 {
+    margin-top: 0;
+}
+
+.albumTopInfo .albumSectionRight p {
+    font-weight: 200;
+    color: #686c7d;
+}
+

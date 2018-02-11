@@ -23,13 +23,16 @@ $album = new Album($connection, $albumId);
 $artist = $album->getArtist();
 ?>
 
-<div class="albumInfo">
-    <div class="sectionLeft">
-        <img src="<?php echo $album->getArt(); ?>"
+<div class="albumTopInfo">
+
+    <div class="albumSectionLeft">
+        <img src="<?php echo $album->getArt(); ?>"/>
     </div>
-    <div class="sectionRight">
+
+    <div class="albumSectionRight">
         <h1><?php echo $album->getTitle(); ?></h1>
-        <span><?php echo $artist->getName(); ?></span>
+        <p><?php echo $artist->getName(); ?></p>
+        <p><?php echo $album->getAlbumNumSongs(); ?> Tracks</p>
 
     </div>
 </div>
