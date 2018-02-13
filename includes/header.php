@@ -32,17 +32,18 @@ if (isset($_SESSION['userLoggedIn'])) {
 <head>
     <title>Mace Media Player</title>
     <link rel="stylesheet" type="text/css" href="css/style.css">
-    <script src="js/script.js"></script>
+    <script src="js\lib\jquery-3.2.1.min .js"></script>
+    <script src="js\script.js"></script>
 </head>
 <body>
 
-<script>
-
-    var audioElement = new Audio();
-    audioElement.setTrack("assets/music/Burnin_Both_Ends/bad-habits.mp3");
-    audioElement.audio.play();
-
-</script>
+<!--<script>-->
+<!---->
+<!--    var audioElement = new Audio();-->
+<!--    audioElement.setTrack("assets/music/Burnin_Both_Ends/bad-habits.mp3");-->
+<!--    audioElement.audio.play();-->
+<!---->
+<!--</script>-->
 
 
 <div id="mainContainer">

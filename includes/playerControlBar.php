@@ -6,7 +6,56 @@
  * Time: 11:18 PM
  */
 
+
+//Query to select 10 songs by random
+$songQuery = mysqli_query($connection, "SELECT * FROM songs ORDER BY RAND() LIMIT 10");
+
+$songArray = array();
+
+while ($row = mysqli_fetch_array($songQuery)) {
+
+    array_push($songArray, $row['id']);
+}
+
+
+$jsonArray = json_encode($songArray);
 ?>
+
+
+<script>
+
+
+    $(document).ready(function () {
+        currentPlayList = <?php echo $jsonArray; ?>;
+        audioElement = new Audio();
+        setTrack(currentPlayList[0], currentPlayList, false);
+    });
+
+    function setTrack(trackId, newPlaylist, play) {
+
+
+        audioElement.setTrack("assets/music/fighter/04_human.mp3");
+        if (play) {
+
+            audioElement.play();
+        }
+
+    }
+
+    function playTrack() {
+        $(".controlBtn.play").hide();
+        $(".controlBtn.pause").show();
+        audioElement.play();
+    }
+
+    function pauseTrack() {
+
+        $(".controlBtn.play").show();
+        $(".controlBtn.pause").hide();
+        audioElement.pause();
+    }
+
+</script>
 
 
 <div id="mediaPlayerBarContain">
@@ -41,11 +90,11 @@
                         <img src="assets/images/icons/backBtn.png" alt="previous">
                     </button>
 
-                    <button class="controlBtn play" title="Play Button">
+                    <button class="controlBtn play" title="Play Button" onclick="playTrack()">
                         <img src="assets/images/icons/playBtn.png" alt="play">
                     </button>
 
-                    <button class="controlBtn pause" title="Pause Button" style="display: none">
+                    <button class="controlBtn pause" title="Pause Button" style="display: none" onclick="pauseTrack()">
                         <img src="assets/images/icons/pauseBtn.png" alt="pause">
                     </button>
 
