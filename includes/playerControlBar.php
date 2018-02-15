@@ -32,9 +32,16 @@ $jsonArray = json_encode($songArray);
     });
 
     function setTrack(trackId, newPlaylist, play) {
+        //AJAX Call for trackID
+        $.post("includes/handlers/ajax/getSongJson.php", {songId: trackId}, function (data) {
+
+            console.log(data);
 
 
-        audioElement.setTrack("assets/music/fighter/04_human.mp3");
+        });
+
+
+//        audioElement.setTrack("assets/music/fighter/04_human.mp3");
         if (play) {
 
             audioElement.play();
