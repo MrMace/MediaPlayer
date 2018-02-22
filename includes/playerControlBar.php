@@ -54,9 +54,8 @@ $jsonArray = json_encode($songArray);
             });
 
 
-
-            audioElement.setTrack(track.path);
-
+            audioElement.setTrack(track);
+//            playTrack();
 
 
         });
@@ -71,6 +70,13 @@ $jsonArray = json_encode($songArray);
     }
 
     function playTrack() {
+
+        if (audioElement.audio.currentTime == 0) {
+            $.post("includes/handlers/ajax/updatePlays.php", {songId: audioElement.currentlyPlaying.id});
+        } else {
+            console.log("Dont");
+        }
+
         $(".controlBtn.play").hide();
         $(".controlBtn.pause").show();
         audioElement.play();
