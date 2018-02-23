@@ -30,6 +30,11 @@ $(".playbackBar .progress").css("width", progress + "%");
 
 }
 
+function updateVolBar(audio){
+    var volume = audio.volume * 100;
+    $(".volBar .progress").css("width", volume + "%");
+}
+
 
 function Audio() {
     this.currentPlaying;
@@ -47,6 +52,10 @@ function Audio() {
         }
 
     });
+
+    this.audio.addEventListener("volumechange", function(){
+        updateVolBar(this);
+    })
 
     this.setTrack = function (track) {
         this.currentlyPlaying = track;

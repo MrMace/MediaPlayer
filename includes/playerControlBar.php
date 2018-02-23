@@ -24,7 +24,7 @@ $jsonArray = json_encode($songArray);
 
 <script>
 
-
+// progress bar
     $(document).ready(function () {
         currentPlayList = <?php echo $jsonArray; ?>;
         audioElement = new Audio();
@@ -45,6 +45,33 @@ $jsonArray = json_encode($songArray);
                 $(".playbackBar .progressBar").mouseup(function (e){
                     timeFromOffset(e, this);
                 });
+
+
+                //vol bar
+        $(".volBar .progressBar").mousedown(function (){
+
+            mouseDown = true;
+        });
+
+        $(".volBar .progressBar").mousemove(function (e){
+
+            if(mouseDown){
+                // sets vol time depending on position of mouse
+                var percentage = e.offsetX / $(this).width();
+                if(percentage >= 0 && percentage <= 1){
+                    audioElement.audio.volume = percentage;
+                }
+
+            }
+        });
+        $(".volBar .progressBar").mouseup(function (e){
+
+
+            var percentage = e.offsetX / $(this).width();
+            if(percentage >= 0 && percentage <= 1){
+                audioElement.audio.volume = percentage;
+            }
+        });
 
                 $(document).mouseup(function(){
                     mouseDown = false;
