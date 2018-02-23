@@ -1,5 +1,6 @@
 var currentPlayList = [];
 var audioElement;
+var mouseDown = false;
 
 function formatTime(seconds) {
     var time = Math.round(seconds);
@@ -7,11 +8,30 @@ function formatTime(seconds) {
     var mins = Math.floor(time / 60);
     var seconds = time - (mins * 60);
 
-    return mins + ":" + seconds;
+    // var extraZero;
+    // if(seconds < 10) {
+    //     extraZero = "0";
+    // }else {
+    //     extraZero = "";
+    // }
+
+    // conditional staement
+    var extraZero = (seconds<10)? "0" : "";
+
+    return mins + ":" + extraZero + seconds;
 }
+
+function updateProgressBar(audio){
+$(".progressTime.current").text(formatTime(audio.currentTime));
+$(".progressTime.remaining").text(formatTime(audio.duration - audio.currentTime))
+
+    var progress = audio.currentTime / audio.duration * 100;
+$(".playbackBar .progress").css("width", progress + "%");
+
+}
+
+
 function Audio() {
-
-
     this.currentPlaying;
     this.audio = document.createElement('audio');
 
@@ -19,6 +39,13 @@ function Audio() {
         //refers to obj event called on.
         var duration = formatTime(this.duration);
         $(".progressTime.remaining").text(duration);
+    });
+
+    this.audio.addEventListener("timeupdate", function (){
+        if(this.duration) {
+            updateProgressBar(this);
+        }
+
     });
 
     this.setTrack = function (track) {
@@ -33,4 +60,9 @@ function Audio() {
     this.pause = function () {
         this.audio.pause();
     };
+    
+    this.setTime = function (seconds) {
+        //current time num seconds passed in.
+        this.audio.currentTime = seconds;
+    }
 }

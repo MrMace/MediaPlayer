@@ -29,7 +29,36 @@ $jsonArray = json_encode($songArray);
         currentPlayList = <?php echo $jsonArray; ?>;
         audioElement = new Audio();
         setTrack(currentPlayList[0], currentPlayList, false);
+
+                $(".playbackBar .progressBar").mousedown(function (){
+
+                   mouseDown = true;
+                });
+
+                $(".playbackBar .progressBar").mousemove(function (e){
+
+                   if(mouseDown){
+                       // sets song time depending on position of mouse
+                       timeFromOffset(e, this);
+                   }
+                });
+                $(".playbackBar .progressBar").mouseup(function (e){
+                    timeFromOffset(e, this);
+                });
+
+                $(document).mouseup(function(){
+                    mouseDown = false;
+                })
+
     });
+
+    function timeFromOffset(mouse,progressBar) {
+
+        var percentage = mouse.offsetX/ $(progressBar).width() * 100;
+        var seconds = audioElement.audio.duration * (percentage/ 100);
+        audioElement.setTime(seconds);
+
+    }
 
     function setTrack(trackId, newPlaylist, play) {
         //AJAX Call for trackID
