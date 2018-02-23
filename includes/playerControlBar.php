@@ -29,6 +29,11 @@ $jsonArray = json_encode($songArray);
         currentPlayList = <?php echo $jsonArray; ?>;
         audioElement = new Audio();
         setTrack(currentPlayList[0], currentPlayList, false);
+        updateVolBar(audioElement.audio);
+// prevent blue highlights
+        $("#mediaPlayerBarContain").on("mousedown touchstart mousemove touchmove", function (e) {
+            e.preventDefault();
+        });
 
                 $(".playbackBar .progressBar").mousedown(function (){
 
@@ -111,7 +116,7 @@ $jsonArray = json_encode($songArray);
 
 
             audioElement.setTrack(track);
-//            playTrack();
+           playTrack();
 
 
         });

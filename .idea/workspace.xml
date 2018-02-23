@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="47153553-d4a3-4748-ae9a-32f6d08ad13f" name="Default" comment="Track duration">
+    <list default="true" id="47153553-d4a3-4748-ae9a-32f6d08ad13f" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change beforePath="$PROJECT_DIR$/includes/playerControlBar.php" afterPath="$PROJECT_DIR$/includes/playerControlBar.php" />
       <change beforePath="$PROJECT_DIR$/js/script.js" afterPath="$PROJECT_DIR$/js/script.js" />
@@ -55,23 +55,23 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="playerControlBar.php" pinned="false" current-in-tab="false">
+      <file leaf-file-name="playerControlBar.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/includes/playerControlBar.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1848">
-              <caret line="72" column="13" lean-forward="false" selection-start-line="72" selection-start-column="13" selection-end-line="72" selection-end-column="13" />
+            <state relative-caret-position="-131">
+              <caret line="119" column="0" lean-forward="true" selection-start-line="119" selection-start-column="0" selection-end-line="119" selection-end-column="0" />
               <folding>
-                <marker date="1519426614736" expanded="true" signature="167:211" ph="SELECT * FRO... songs" />
+                <marker date="1519428000579" expanded="true" signature="167:211" ph="SELECT * FRO... songs" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="script.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="script.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/js/script.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="430">
-              <caret line="38" column="18" lean-forward="true" selection-start-line="38" selection-start-column="18" selection-end-line="38" selection-end-column="18" />
+            <state relative-caret-position="-187">
+              <caret line="3" column="21" lean-forward="false" selection-start-line="3" selection-start-column="21" selection-end-line="3" selection-end-column="21" />
               <folding />
             </state>
           </provider>
@@ -343,7 +343,7 @@
       <workItem from="1516997594265" duration="689000" />
       <workItem from="1517513540520" duration="62543000" />
       <workItem from="1519347321894" duration="1869000" />
-      <workItem from="1519418721052" duration="5790000" />
+      <workItem from="1519418721052" duration="6719000" />
     </task>
     <task id="LOCAL-00001" summary="Reg updated, sanitize">
       <created>1515969759107</created>
@@ -569,11 +569,18 @@
       <option name="project" value="LOCAL" />
       <updated>1519425991792</updated>
     </task>
-    <option name="localTasksCounter" value="33" />
+    <task id="LOCAL-00033" summary="Volume bar">
+      <created>1519427191180</created>
+      <option name="number" value="00033" />
+      <option name="presentableId" value="LOCAL-00033" />
+      <option name="project" value="LOCAL" />
+      <updated>1519427191180</updated>
+    </task>
+    <option name="localTasksCounter" value="34" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="144390000" />
+    <option name="totallyTimeSpent" value="145319000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -647,7 +654,6 @@
     <ignored-roots>
       <path value="$PROJECT_DIR$/Media-Player" />
     </ignored-roots>
-    <MESSAGE value="adjust Error output" />
     <MESSAGE value="Finished Log in validation, database connection, error handling" />
     <MESSAGE value="added sessions" />
     <MESSAGE value="Beginning player controls set up" />
@@ -672,7 +678,8 @@
     <MESSAGE value="Times played" />
     <MESSAGE value="Track duration" />
     <MESSAGE value="progress bar" />
-    <option name="LAST_COMMIT_MESSAGE" value="progress bar" />
+    <MESSAGE value="Volume bar" />
+    <option name="LAST_COMMIT_MESSAGE" value="Volume bar" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
   <component name="XDebuggerManager">
@@ -1054,21 +1061,21 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/includes/playerControlBar.php">
+    <entry file="file://$PROJECT_DIR$/js/script.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1848">
-          <caret line="72" column="13" lean-forward="false" selection-start-line="72" selection-start-column="13" selection-end-line="72" selection-end-column="13" />
-          <folding>
-            <marker date="1519426614736" expanded="true" signature="167:211" ph="SELECT * FRO... songs" />
-          </folding>
+        <state relative-caret-position="-187">
+          <caret line="3" column="21" lean-forward="false" selection-start-line="3" selection-start-column="21" selection-end-line="3" selection-end-column="21" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/js/script.js">
+    <entry file="file://$PROJECT_DIR$/includes/playerControlBar.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="430">
-          <caret line="38" column="18" lean-forward="true" selection-start-line="38" selection-start-column="18" selection-end-line="38" selection-end-column="18" />
-          <folding />
+        <state relative-caret-position="-131">
+          <caret line="119" column="0" lean-forward="true" selection-start-line="119" selection-start-column="0" selection-end-line="119" selection-end-column="0" />
+          <folding>
+            <marker date="1519428000579" expanded="true" signature="167:211" ph="SELECT * FRO... songs" />
+          </folding>
         </state>
       </provider>
     </entry>

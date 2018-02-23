@@ -1,6 +1,7 @@
 var currentPlayList = [];
 var audioElement;
 var mouseDown = false;
+var currentIndex = 0;
 
 function formatTime(seconds) {
     var time = Math.round(seconds);
@@ -23,7 +24,7 @@ function formatTime(seconds) {
 
 function updateProgressBar(audio){
 $(".progressTime.current").text(formatTime(audio.currentTime));
-$(".progressTime.remaining").text(formatTime(audio.duration - audio.currentTime))
+$(".progressTime.remaining").text(formatTime(audio.duration - audio.currentTime));
 
     var progress = audio.currentTime / audio.duration * 100;
 $(".playbackBar .progress").css("width", progress + "%");
@@ -55,7 +56,7 @@ function Audio() {
 
     this.audio.addEventListener("volumechange", function(){
         updateVolBar(this);
-    })
+    });
 
     this.setTrack = function (track) {
         this.currentlyPlaying = track;
