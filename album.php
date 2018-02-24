@@ -48,10 +48,10 @@ $artist = $album->getArtist();
 
             $albumTrack = new Song($connection, $songId);
             $albumArtist = $albumTrack->getArtist();
-
+//output all the tracks
             echo "<li class='trackListRow'>
 <div class='trackCount'>
-<img class='play' src='assets/images/icons/trackPlay.png'>
+<img class='play' src='assets/images/icons/trackPlay.png' onclick='setTrack(\"" . $albumTrack->getId() ."\", tempPlayList, true)'>
 <span class='trackNum'>$i</span>
 </div>
 
@@ -71,6 +71,14 @@ $artist = $album->getArtist();
             $i++;
         }
         ?>
+
+<script>
+    // converts php array into json
+    var tempTrackIds = '<?php echo json_encode($songIdArray); ?>';
+    // converts json into object to access
+    tempPlayList = JSON.parse(tempTrackIds);
+</script>
+
     </ul>
 
 

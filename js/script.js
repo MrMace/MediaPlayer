@@ -1,8 +1,11 @@
 var currentPlayList = [];
+var shufflePlayList = [];
+var tempPlayList = [];
 var audioElement;
 var mouseDown = false;
 var currentIndex = 0;
 var repeat = false;
+var shuffle = false;
 
 function formatTime(seconds) {
     var time = Math.round(seconds);
@@ -44,7 +47,7 @@ function Audio() {
 
     this.audio.addEventListener("ended", function () {
         nextSong();
-    })
+    });
 
     this.audio.addEventListener("canplay", function () {
         //refers to obj event called on.
