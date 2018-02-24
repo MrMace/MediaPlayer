@@ -84,6 +84,20 @@ $jsonArray = json_encode($songArray);
 
     });
 
+function setMute(){
+    audioElement.audio.muted = !audioElement.audio.muted;
+    var imgName = audioElement.audio.muted? "ActiveVolMute.png": "muteBtn.png";
+    $(".controlBtn.volume img").attr("src", "assets/images/icons/" + imgName);
+
+}
+
+// function setShuffle(){
+//     audioElement.audio.muted = !audioElement.audio.muted;
+//     var imgName = audioElement.audio.muted ? "ActiveShuffleBtn.png": "shuffleBtn.png";
+//     $(".controlBtn.volume img").attr("src", "assets/images/icons/" + imgName);
+//
+// }
+
     function timeFromOffset(mouse,progressBar) {
 
         var percentage = mouse.offsetX/ $(progressBar).width() * 100;
@@ -92,16 +106,49 @@ $jsonArray = json_encode($songArray);
 
     }
 
+    function prevSong(){
+        if(audioElement.audio.currentTime >= 5 || currentIndex == 0 ){
+            audioElement.setTime(0);
+
+        }else{
+            currentIndex = currentIndex - 1;
+            setTrack(currentPlayList[currentIndex], currentPlayList, true);
+        }
+    }
+
+    function nextSong(){
+
+        if(repeat == true){
+            audioElement.setTime(0);
+            playTrack();
+            return;
+        }
+        if(currentIndex == currentPlayList.length -1){
+            currentIndex = 0;
+        }else{
+            currentIndex++;
+        }
+
+        var trackToPlay = currentPlayList[currentIndex];
+        setTrack(trackToPlay, currentPlayList, true);
+    }
+
+    function setRepeat(){
+        //simple way of saying if true equal false else true
+        repeat = !repeat;
+        var imgName = repeat? "ActiveRepeatBtn.png": "repeatBtn.png";
+        $(".controlBtn.repeat img").attr("src", "assets/images/icons/" + imgName);
+
+    }
+
     function setTrack(trackId, newPlaylist, play) {
+        currentIndex = currentPlayList.indexOf(trackId);
+        pauseTrack();
         //AJAX Call for trackID
         $.post("includes/handlers/ajax/getSongJson.php", {songId: trackId}, function (data) {
 
-
             var track = JSON.parse(data);
-
-
             $(".trackName span").text(track.title);
-
 //            AJAX call for artist name
             $.post("includes/handlers/ajax/getArtistJson.php", {artistId: track.artist}, function (data) {
                 var artist = JSON.parse(data);
@@ -181,7 +228,7 @@ $jsonArray = json_encode($songArray);
                         <img src="assets/images/icons/shuffleBtn.png" alt="shuffle">
                     </button>
 
-                    <button class="controlBtn previous" title="Previous Button">
+                    <button class="controlBtn previous" title="Previous Button" onclick="prevSong()">
                         <img src="assets/images/icons/backBtn.png" alt="previous">
                     </button>
 
@@ -193,11 +240,11 @@ $jsonArray = json_encode($songArray);
                         <img src="assets/images/icons/pauseBtn.png" alt="pause">
                     </button>
 
-                    <button class="controlBtn next" title="Next Button">
+                    <button class="controlBtn next" title="Next Button" onclick="nextSong()">
                         <img src="assets/images/icons/nextBtn.png" alt="next">
                     </button>
 
-                    <button class="controlBtn repeat" title="Repeat Button">
+                    <button class="controlBtn repeat" title="Repeat Button" onclick="setRepeat()">
                         <img src="assets/images/icons/repeatBtn.png" alt="repeat">
                     </button>
                 </div>
@@ -216,8 +263,8 @@ $jsonArray = json_encode($songArray);
 
         <div id="playerRight">
             <div class="volBar">
-                <button class="controlBtn volume" title="Volume Button">
-                    <img src="assets/images/icons/MaxVolBtn.png" alt="Volume"
+                <button class="controlBtn volume" title="Volume Button" onclick="setMute()">
+                    <img src="assets/images/icons/MaxVolBtn.png" alt="Volume">
                 </button>
 
                 <div class="progressBar">
