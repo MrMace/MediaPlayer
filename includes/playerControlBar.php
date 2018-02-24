@@ -100,7 +100,7 @@ function setShuffle(){
         //random playlist
         shuffleArray(shufflePlayList);
         //keeps from repeating a song
-        currentPlayList = shufflePlayList.indexOf(audioElement.currentlyPlaying.id);
+        currentIndex = shufflePlayList.indexOf(audioElement.currentlyPlaying.id);
     }else{
         // shuffle deactivate
         // go to reg playlist
@@ -211,6 +211,7 @@ function shuffleArray(a) {
         if (play) {
 
             audioElement.play();
+            // playTrack()
         }
 
     }
@@ -219,8 +220,6 @@ function shuffleArray(a) {
 
         if (audioElement.audio.currentTime == 0) {
             $.post("includes/handlers/ajax/updatePlays.php", {songId: audioElement.currentlyPlaying.id});
-        } else {
-            console.log("Dont");
         }
 
         $(".controlBtn.play").hide();

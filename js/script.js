@@ -42,7 +42,7 @@ function updateVolBar(audio){
 
 
 function Audio() {
-    this.currentPlaying;
+    this.currentlyPlaying;
     this.audio = document.createElement('audio');
 
     this.audio.addEventListener("ended", function () {
