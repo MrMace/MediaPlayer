@@ -201,18 +201,20 @@ function shuffleArray(a) {
 
 
             audioElement.setTrack(track);
-           playTrack();
+           // playTrack();
 
+
+            //        audioElement.setTrack("assets/music/fighter/04_human.mp3");
+            if (play) {
+
+                // audioElement.play();
+                playTrack()
+            }
 
         });
 
 
-//        audioElement.setTrack("assets/music/fighter/04_human.mp3");
-        if (play) {
 
-            audioElement.play();
-            // playTrack()
-        }
 
     }
 

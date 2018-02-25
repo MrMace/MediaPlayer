@@ -6,6 +6,7 @@ var mouseDown = false;
 var currentIndex = 0;
 var repeat = false;
 var shuffle = false;
+var userLoggedIn;
 
 function formatTime(seconds) {
     var time = Math.round(seconds);
@@ -24,6 +25,18 @@ function formatTime(seconds) {
     var extraZero = (seconds<10)? "0" : "";
 
     return mins + ":" + extraZero + seconds;
+}
+
+function pageOpen(url){
+    if(url.indexOf("?") == -1 ){
+        url = url + "?";
+    }
+    var encodedUrl = encodeURI(url + "&userLoggedIn=" + userLoggedIn);
+    $("#mainContent").load(encodedUrl);
+    //scrolls top
+    $("body").scrollTop(0);
+    // places url in addressbar
+    history.pushState(null, null, url);
 }
 
 function updateProgressBar(audio){

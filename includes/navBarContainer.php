@@ -10,18 +10,18 @@
 
 <div id="navBarContainer">
     <nav class="navBar">
-        <a href="index.php" class="logo">
+        <span role="link" tabindex="0" onclick="pageOpen('index.php')" class="logo">
             <img src="assets/images/icons/Logo.png" ">
-        </a>
+        </span>
 
 
         <div class="sectionGroup">
 
             <div class="navBtn">
-                <a href="search.php" class="navBtnLink">
+                <span role='link' tabindex="0" onclick="pageOpen('search.php')" class="navBtnLink">
                     Search
-                    <img src="assets/images/icons/search.png" class="icon" alt="Search"
-                </a>
+                    <img src="assets/images/icons/search.png" class="icon" alt="Search">
+                </span>
             </div>
 
         </div>
@@ -29,20 +29,20 @@
         <div class="sectionGroup">
 
             <div class="navBtn">
-                <a href="profile.php" class="navBtnLink">
+                <span role="link" tabindex="0" onclick="pageOpen('profile.php')" class="navBtnLink">
                     USER
-                </a>
+                </span>
             </div>
 
             <div class="navBtn">
-                <a href="yourMusic.php" class="navBtnLink">
+                <span role="link" tabindex="0" onclick="pageOpen('yourMusic.php')"  class="navBtnLink">
                     Your Music
-                </a>
+                </span>
             </div>
             <div class="navBtn">
-                <a href="browse.php" class="navBtnLink">
+                <span role="link" tabindex="0" onclick="pageOpen('browse.php')" class="navBtnLink">
                     Browse
-                </a>
+                </span>
             </div>
 
 
