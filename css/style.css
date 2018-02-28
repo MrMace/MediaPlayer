@@ -16,6 +16,25 @@ body {
     color: whitesmoke;
 }
 
+
+.button {
+    color: white;
+    min-width: 100px;
+    padding: 10px;
+    border-radius: 250px;
+    margin-bottom: 5px;
+    background-color: transparent;
+    font-weight: 400;
+    cursor: pointer;
+    border: 1px solid white;
+}
+
+.button:hover {
+    transform: scale(1.1);
+    background-color: #681a80;
+
+}
+
 /*-------------------------------Top container---------------------------------------------*/
 
 #containerTop {
@@ -24,6 +43,11 @@ body {
 
 }
 
+
+.borderBottom {
+    border-bottom: 1px solid white;
+    margin-bottom: 20px;
+}
 /*Main Content Area                                                                                           ADJUSTMENTS NEEDED*/
 
 #mainScreenContainer {
@@ -158,14 +182,18 @@ body {
     height: auto;
 }
 
+
 .btns .controlBtn.play img,
-.controlBtn.play img {
-    width: 110%;
-    height: auto;
+.controlBtn.pause img {
+width: 32px;
+    height:32px;
 }
+
+
 
 .controlBtn:hover {
     cursor: pointer;
+    transform: scale(1.1);
 }
 
 .progressTime {
@@ -278,6 +306,19 @@ body {
 
 /*----------------*/
 
+
+/*ARTIST*/
+
+
+.artistInfo{
+    text-align: center;
+}
+
+
+
+
+/*Album*/
+
 .albumTopInfo {
     display: inline-block;
     padding: 40px 0 10px 0;
@@ -389,3 +430,4 @@ body {
     width: 12%;
     text-align: right;
 }
+
