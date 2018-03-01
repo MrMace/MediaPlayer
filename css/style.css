@@ -38,6 +38,10 @@ body {
     cursor: pointer;
 }
 
+input:focus {
+    outline: none;
+}
+
 /*-------------------------------Top container---------------------------------------------*/
 
 #containerTop {
@@ -439,3 +443,25 @@ width: 32px;
     text-align: right;
 }
 
+/*SEarch*/
+
+.searchContainer {
+    background-color: rgba(21, 0, 21, 0.47) ;
+    padding: 20px 25px;
+}
+
+.searchContainer h4 {
+    margin: 0;
+    font-weight: 400;
+}
+
+.searchContainer .searchInput {
+    width: 100%;
+    color: white;
+    background-color: transparent;
+    border: none;
+    font-size: 70px;
+    font-weight: 600;
+    letter-spacing: 2px;
+
+}
