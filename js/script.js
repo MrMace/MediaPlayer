@@ -39,6 +39,11 @@ function pageOpen(url){
     history.pushState(null, null, url);
 }
 
+function playFirstTrack() {
+
+    setTrack(tempPlayList[0], tempPlayList, true);
+}
+
 function updateProgressBar(audio){
 $(".progressTime.current").text(formatTime(audio.currentTime));
 $(".progressTime.remaining").text(formatTime(audio.duration - audio.currentTime));

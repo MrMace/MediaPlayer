@@ -31,7 +31,7 @@ $artist = new Artist($connection, $artistId);
         <h1 class="artistName"><?php echo $artist->getName();   ?></h1>
 
             <div class="headerButtons">
-                <button class="button">Play</button>
+                <button class="button" onclick="playFirstTrack()">Play</button>
             </div>
         </div>
 
@@ -40,6 +40,7 @@ $artist = new Artist($connection, $artistId);
 
 
 <div class="songListContainer borderBottom">
+    <h2>Popular Songs</h2>
     <ul class="songList">
 
         <?php
@@ -89,5 +90,30 @@ $artist = new Artist($connection, $artistId);
 
 
 </div>
+
+
+<div class="gridContainer">
+    <h2>Albums</h2>
+
+    <?php $queryAlbum = mysqli_query($connection, "SELECT * FROM albums WHERE artist ='$artistId'");
+
+    while ($row = mysqli_fetch_array($queryAlbum)) {
+
+
+        echo "<div class='gridItem'>  
+<span role='link' tabindex='0' onclick='pageOpen(\"album.php?id=" . $row['id'] . "\")'>
+   <img src='" . $row['art'] . "'>
+   
+   
+  <div class='gridItemInfo'>  "
+            . $row['title'] .
+            "</div> </span></div>";
+
+
+
+    }
+    ?>
+</div>
+
 
 

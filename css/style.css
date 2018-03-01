@@ -18,12 +18,12 @@ body {
 
 
 .button {
-    color: white;
+    color:white;
     min-width: 100px;
     padding: 10px;
     border-radius: 250px;
     margin-bottom: 5px;
-    background-color: transparent;
+    background-color: purple;
     font-weight: 400;
     cursor: pointer;
     border: 1px solid white;
@@ -31,8 +31,11 @@ body {
 
 .button:hover {
     transform: scale(1.1);
-    background-color: #681a80;
+    background-color: purple;
+}
 
+[role=link]{
+    cursor: pointer;
 }
 
 /*-------------------------------Top container---------------------------------------------*/
@@ -94,6 +97,11 @@ body {
     overflow: hidden;
     white-space: nowrap;
 
+}
+
+.gridContainer h2,
+.songListContainer h2 {
+    text-align: center;
 }
 
 /*------------------------------------------------------------------media player controls--------------------------*/

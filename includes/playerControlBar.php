@@ -191,12 +191,15 @@ function shuffleArray(a) {
             $.post("includes/handlers/ajax/getArtistJson.php", {artistId: track.artist}, function (data) {
                 var artist = JSON.parse(data);
                 $(".artistName span").text(artist.name);
+                $(".artistName span").attr("onclick", "pageOpen('artist.php?id=" + artist.id + "')");
             });
 
             //            AJAX call for album
             $.post("includes/handlers/ajax/getAlbumJson.php", {albumId: track.album}, function (data) {
                 var album = JSON.parse(data);
                 $(".albumLink img").attr("src", album.art);
+                $(".albumLink img").attr("onclick", "pageOpen('album.php?id=" + album.id + "')");
+                $(".trackName span").attr("onclick", "pageOpen('album.php?id=" + album.id + "')");
             });
 
 
@@ -246,14 +249,14 @@ function shuffleArray(a) {
         <div id="playerLeft">
             <div class="content">
                 <span class="albumLink">
-                    <img src="" class="albumImage">
+                    <img src="" class="albumImage" role="link" tabindex="0">
                 </span>
                 <div class="albumInfo">
                     <span class="trackName">
-                        <span></span>
+                        <span role="link" tabindex="0"></span>
                     </span>
                     <span class="artistName">
-                        <span></span>
+                        <span role="link" tabindex="0"></span>
                     </span>
                 </div>
             </div>
