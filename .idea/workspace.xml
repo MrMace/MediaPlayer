@@ -4,6 +4,9 @@
     <list default="true" id="47153553-d4a3-4748-ae9a-32f6d08ad13f" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change beforePath="$PROJECT_DIR$/css/style.css" afterPath="$PROJECT_DIR$/css/style.css" />
+      <change beforePath="$PROJECT_DIR$/includes/classes/Artist.php" afterPath="$PROJECT_DIR$/includes/classes/Artist.php" />
+      <change beforePath="$PROJECT_DIR$/includes/playerControlBar.php" afterPath="$PROJECT_DIR$/includes/playerControlBar.php" />
+      <change beforePath="$PROJECT_DIR$/js/script.js" afterPath="$PROJECT_DIR$/js/script.js" />
       <change beforePath="$PROJECT_DIR$/search.php" afterPath="$PROJECT_DIR$/search.php" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -39,10 +42,10 @@
       <file leaf-file-name="playerControlBar.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/includes/playerControlBar.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="456">
-              <caret line="201" column="34" lean-forward="false" selection-start-line="201" selection-start-column="34" selection-end-line="201" selection-end-column="34" />
+            <state relative-caret-position="-1091">
+              <caret line="201" column="30" lean-forward="false" selection-start-line="201" selection-start-column="30" selection-end-line="201" selection-end-column="30" />
               <folding>
-                <marker date="1519884032924" expanded="true" signature="167:211" ph="SELECT * FRO... songs" />
+                <marker date="1519932830716" expanded="true" signature="167:211" ph="SELECT * FRO... songs" />
               </folding>
             </state>
           </provider>
@@ -51,36 +54,52 @@
       <file leaf-file-name="style.css" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/css/style.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="578">
-              <caret line="41" column="18" lean-forward="false" selection-start-line="41" selection-start-column="18" selection-end-line="41" selection-end-column="18" />
+            <state relative-caret-position="317">
+              <caret line="459" column="16" lean-forward="true" selection-start-line="459" selection-start-column="16" selection-end-line="459" selection-end-column="16" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="search.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="search.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/search.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="142">
-              <caret line="61" column="30" lean-forward="false" selection-start-line="61" selection-start-column="30" selection-end-line="61" selection-end-column="30" />
+            <state relative-caret-position="85">
+              <caret line="17" column="1" lean-forward="true" selection-start-line="17" selection-start-column="1" selection-end-line="17" selection-end-column="1" />
               <folding>
-                <marker date="1519887367919" expanded="true" signature="1178:1225" ph="SELECT id FR... songs" />
-                <marker date="1519887367919" expanded="true" signature="1178:1234" ph="SELECT id FR... songs" />
-                <marker date="1519887367919" expanded="true" signature="1830:2386" ph="..." />
-                <marker date="1519887367919" expanded="true" signature="1855:2026" ph="..." />
-                <marker date="1519887367919" expanded="true" signature="2051:2185" ph="..." />
-                <marker date="1519887367919" expanded="true" signature="2213:2281" ph="..." />
-                <marker date="1519887367919" expanded="true" signature="2308:2380" ph="..." />
+                <marker date="1519934115615" expanded="true" signature="1273:1319" ph="SELECT id FR... songs" />
+                <marker date="1519934115615" expanded="true" signature="1273:1328" ph="SELECT id FR... songs" />
+                <marker date="1519934115615" expanded="true" signature="1933:2490" ph="..." />
+                <marker date="1519934115615" expanded="true" signature="1958:2130" ph="..." />
+                <marker date="1519934115615" expanded="true" signature="2155:2289" ph="..." />
+                <marker date="1519934115615" expanded="true" signature="2317:2385" ph="..." />
+                <marker date="1519934115615" expanded="true" signature="2412:2484" ph="..." />
+                <marker date="1519934115615" expanded="true" signature="2550:2791" ph="..." />
+                <marker date="1519934115615" expanded="true" signature="2933:2980" ph="SELECT id FR... artists" />
+                <marker date="1519934115615" expanded="true" signature="2933:2989" ph="SELECT id FR... artists" />
+                <marker date="1519934115615" expanded="true" signature="3289:3558" ph="..." />
+                <marker date="1519934115615" expanded="true" signature="3330:3412" ph="..." />
+                <marker date="1519934115615" expanded="true" signature="3330:3413" ph="..." />
+                <marker date="1519934115615" expanded="true" signature="3330:3444" ph="..." />
+                <marker date="1519934115615" expanded="true" signature="3330:3447" ph="..." />
+                <marker date="1519934115615" expanded="true" signature="3330:3527" ph="..." />
+                <marker date="1519934115615" expanded="true" signature="3330:3544" ph="..." />
+                <marker date="1519934115615" expanded="true" signature="3330:3551" ph="..." />
+                <marker date="1519934115615" expanded="true" signature="3330:3558" ph="..." />
+                <marker date="1519934115615" expanded="true" signature="3686:3742" ph="SELECT * FRO... albums" />
+                <marker date="1519934115615" expanded="true" signature="3686:3744" ph="SELECT * FRO... albums" />
+                <marker date="1519934115615" expanded="true" signature="3984:4221" ph="..." />
+                <marker date="1519934115615" expanded="true" signature="4074:4215" ph="..." />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="script.js" pinned="false" current-in-tab="false">
+      <file leaf-file-name="script.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/js/script.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="612">
-              <caret line="43" column="50" lean-forward="false" selection-start-line="43" selection-start-column="50" selection-end-line="43" selection-end-column="50" />
+            <state relative-caret-position="102">
+              <caret line="6" column="19" lean-forward="true" selection-start-line="6" selection-start-column="19" selection-end-line="6" selection-end-column="19" />
               <folding />
             </state>
           </provider>
@@ -89,11 +108,11 @@
       <file leaf-file-name="Artist.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/includes/classes/Artist.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="493">
-              <caret line="32" column="118" lean-forward="true" selection-start-line="32" selection-start-column="118" selection-end-line="32" selection-end-column="118" />
+            <state relative-caret-position="663">
+              <caret line="43" column="25" lean-forward="false" selection-start-line="43" selection-start-column="25" selection-end-line="43" selection-end-column="25" />
               <folding>
-                <marker date="1519843906415" expanded="true" signature="370:414" ph="SELECT name artist" />
-                <marker date="1519843906415" expanded="true" signature="599:664" ph="SELECT id FR... songs" />
+                <marker date="1519930361810" expanded="true" signature="369:413" ph="SELECT name artist" />
+                <marker date="1519930361810" expanded="true" signature="599:664" ph="SELECT id FR... songs" />
               </folding>
             </state>
           </provider>
@@ -157,8 +176,8 @@
       <file leaf-file-name="artist.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/artist.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="329">
-              <caret line="88" column="9" lean-forward="true" selection-start-line="39" selection-start-column="0" selection-end-line="93" selection-end-column="0" />
+            <state relative-caret-position="567">
+              <caret line="108" column="23" lean-forward="true" selection-start-line="93" selection-start-column="0" selection-end-line="117" selection-end-column="0" />
               <folding>
                 <marker date="1519883395536" expanded="true" signature="1163:1719" ph="..." />
                 <marker date="1519883395536" expanded="true" signature="1188:1359" ph="..." />
@@ -197,6 +216,7 @@
       <find>40px 0</find>
       <find>container</find>
       <find>Container</find>
+      <find>h2</find>
     </findStrings>
     <replaceStrings>
       <replace>Art</replace>
@@ -239,12 +259,12 @@
         <option value="$PROJECT_DIR$/browse.php" />
         <option value="$PROJECT_DIR$/index.php" />
         <option value="$PROJECT_DIR$/includes/includedFiles.php" />
-        <option value="$PROJECT_DIR$/includes/classes/Artist.php" />
-        <option value="$PROJECT_DIR$/js/script.js" />
         <option value="$PROJECT_DIR$/artist.php" />
+        <option value="$PROJECT_DIR$/includes/classes/Artist.php" />
         <option value="$PROJECT_DIR$/includes/playerControlBar.php" />
         <option value="$PROJECT_DIR$/css/style.css" />
         <option value="$PROJECT_DIR$/search.php" />
+        <option value="$PROJECT_DIR$/js/script.js" />
       </list>
     </option>
   </component>
@@ -270,8 +290,9 @@
     </include_path>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="957" />
-    <option name="width" value="963" />
+    <option name="x" value="754" />
+    <option name="y" value="15" />
+    <option name="width" value="1148" />
     <option name="height" value="1040" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -362,7 +383,7 @@
       <workItem from="1516997594265" duration="689000" />
       <workItem from="1517513540520" duration="62543000" />
       <workItem from="1519347321894" duration="1869000" />
-      <workItem from="1519418721052" duration="37997000" />
+      <workItem from="1519418721052" duration="43971000" />
     </task>
     <task id="LOCAL-00001" summary="Reg updated, sanitize">
       <created>1515969759107</created>
@@ -644,11 +665,18 @@
       <option name="project" value="LOCAL" />
       <updated>1519884327087</updated>
     </task>
-    <option name="localTasksCounter" value="41" />
+    <task id="LOCAL-00041" summary="search Songs">
+      <created>1519887416334</created>
+      <option name="number" value="00041" />
+      <option name="presentableId" value="LOCAL-00041" />
+      <option name="project" value="LOCAL" />
+      <updated>1519887416334</updated>
+    </task>
+    <option name="localTasksCounter" value="42" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="176597000" />
+    <option name="totallyTimeSpent" value="182571000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -660,7 +688,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="957" y="0" width="963" height="1040" extended-state="0" />
+    <frame x="754" y="15" width="1148" height="1040" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32934782" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -722,7 +750,6 @@
     <ignored-roots>
       <path value="$PROJECT_DIR$/Media-Player" />
     </ignored-roots>
-    <MESSAGE value="Organization (put header in footer in own file)" />
     <MESSAGE value="Mysql Query album Info" />
     <MESSAGE value="Created Album page, started implamenting Mysql calls to retrive album page" />
     <MESSAGE value="Created Artist Class" />
@@ -747,7 +774,8 @@
     <MESSAGE value="page Transitions" />
     <MESSAGE value="artist page started, added popular tracks" />
     <MESSAGE value="Artist page, completed" />
-    <option name="LAST_COMMIT_MESSAGE" value="Artist page, completed" />
+    <MESSAGE value="search Songs" />
+    <option name="LAST_COMMIT_MESSAGE" value="search Songs" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
   <component name="XDebuggerManager">
@@ -1047,17 +1075,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/includes/classes/Artist.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="493">
-          <caret line="32" column="118" lean-forward="true" selection-start-line="32" selection-start-column="118" selection-end-line="32" selection-end-column="118" />
-          <folding>
-            <marker date="1519843906415" expanded="true" signature="370:414" ph="SELECT name artist" />
-            <marker date="1519843906415" expanded="true" signature="599:664" ph="SELECT id FR... songs" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/browse.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="340">
@@ -1066,24 +1083,6 @@
             <marker date="1519521090292" expanded="true" signature="278:322" ph="SELECT * FRO... albums" />
             <marker date="1519521090292" expanded="true" signature="417:646" ph="..." />
             <marker date="1519521090292" expanded="true" signature="507:640" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js/script.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="612">
-          <caret line="43" column="50" lean-forward="false" selection-start-line="43" selection-start-column="50" selection-end-line="43" selection-end-column="50" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/includes/playerControlBar.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="456">
-          <caret line="201" column="34" lean-forward="false" selection-start-line="201" selection-start-column="34" selection-end-line="201" selection-end-column="34" />
-          <folding>
-            <marker date="1519884032924" expanded="true" signature="167:211" ph="SELECT * FRO... songs" />
           </folding>
         </state>
       </provider>
@@ -1113,18 +1112,21 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/css/style.css">
+    <entry file="file://$PROJECT_DIR$/includes/classes/Artist.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="578">
-          <caret line="41" column="18" lean-forward="false" selection-start-line="41" selection-start-column="18" selection-end-line="41" selection-end-column="18" />
-          <folding />
+        <state relative-caret-position="663">
+          <caret line="43" column="25" lean-forward="false" selection-start-line="43" selection-start-column="25" selection-end-line="43" selection-end-column="25" />
+          <folding>
+            <marker date="1519930361810" expanded="true" signature="369:413" ph="SELECT name artist" />
+            <marker date="1519930361810" expanded="true" signature="599:664" ph="SELECT id FR... songs" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/artist.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="329">
-          <caret line="88" column="9" lean-forward="true" selection-start-line="39" selection-start-column="0" selection-end-line="93" selection-end-column="0" />
+        <state relative-caret-position="567">
+          <caret line="108" column="23" lean-forward="true" selection-start-line="93" selection-start-column="0" selection-end-line="117" selection-end-column="0" />
           <folding>
             <marker date="1519883395536" expanded="true" signature="1163:1719" ph="..." />
             <marker date="1519883395536" expanded="true" signature="1188:1359" ph="..." />
@@ -1138,19 +1140,61 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/includes/playerControlBar.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1091">
+          <caret line="201" column="30" lean-forward="false" selection-start-line="201" selection-start-column="30" selection-end-line="201" selection-end-column="30" />
+          <folding>
+            <marker date="1519932830716" expanded="true" signature="167:211" ph="SELECT * FRO... songs" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="317">
+          <caret line="459" column="16" lean-forward="true" selection-start-line="459" selection-start-column="16" selection-end-line="459" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/search.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="142">
-          <caret line="61" column="30" lean-forward="false" selection-start-line="61" selection-start-column="30" selection-end-line="61" selection-end-column="30" />
+        <state relative-caret-position="85">
+          <caret line="17" column="1" lean-forward="true" selection-start-line="17" selection-start-column="1" selection-end-line="17" selection-end-column="1" />
           <folding>
-            <marker date="1519887367919" expanded="true" signature="1178:1225" ph="SELECT id FR... songs" />
-            <marker date="1519887367919" expanded="true" signature="1178:1234" ph="SELECT id FR... songs" />
-            <marker date="1519887367919" expanded="true" signature="1830:2386" ph="..." />
-            <marker date="1519887367919" expanded="true" signature="1855:2026" ph="..." />
-            <marker date="1519887367919" expanded="true" signature="2051:2185" ph="..." />
-            <marker date="1519887367919" expanded="true" signature="2213:2281" ph="..." />
-            <marker date="1519887367919" expanded="true" signature="2308:2380" ph="..." />
+            <marker date="1519934115615" expanded="true" signature="1273:1319" ph="SELECT id FR... songs" />
+            <marker date="1519934115615" expanded="true" signature="1273:1328" ph="SELECT id FR... songs" />
+            <marker date="1519934115615" expanded="true" signature="1933:2490" ph="..." />
+            <marker date="1519934115615" expanded="true" signature="1958:2130" ph="..." />
+            <marker date="1519934115615" expanded="true" signature="2155:2289" ph="..." />
+            <marker date="1519934115615" expanded="true" signature="2317:2385" ph="..." />
+            <marker date="1519934115615" expanded="true" signature="2412:2484" ph="..." />
+            <marker date="1519934115615" expanded="true" signature="2550:2791" ph="..." />
+            <marker date="1519934115615" expanded="true" signature="2933:2980" ph="SELECT id FR... artists" />
+            <marker date="1519934115615" expanded="true" signature="2933:2989" ph="SELECT id FR... artists" />
+            <marker date="1519934115615" expanded="true" signature="3289:3558" ph="..." />
+            <marker date="1519934115615" expanded="true" signature="3330:3412" ph="..." />
+            <marker date="1519934115615" expanded="true" signature="3330:3413" ph="..." />
+            <marker date="1519934115615" expanded="true" signature="3330:3444" ph="..." />
+            <marker date="1519934115615" expanded="true" signature="3330:3447" ph="..." />
+            <marker date="1519934115615" expanded="true" signature="3330:3527" ph="..." />
+            <marker date="1519934115615" expanded="true" signature="3330:3544" ph="..." />
+            <marker date="1519934115615" expanded="true" signature="3330:3551" ph="..." />
+            <marker date="1519934115615" expanded="true" signature="3330:3558" ph="..." />
+            <marker date="1519934115615" expanded="true" signature="3686:3742" ph="SELECT * FRO... albums" />
+            <marker date="1519934115615" expanded="true" signature="3686:3744" ph="SELECT * FRO... albums" />
+            <marker date="1519934115615" expanded="true" signature="3984:4221" ph="..." />
+            <marker date="1519934115615" expanded="true" signature="4074:4215" ph="..." />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/script.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="6" column="19" lean-forward="true" selection-start-line="6" selection-start-column="19" selection-end-line="6" selection-end-column="19" />
+          <folding />
         </state>
       </provider>
     </entry>

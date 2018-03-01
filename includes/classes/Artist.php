@@ -16,7 +16,6 @@ class Artist
         $this->connection = $connection;
         $this->id = $id;
 
-
     }
 
     public function getName()
@@ -26,6 +25,7 @@ class Artist
         $artist = mysqli_fetch_array($queryArtist);
         return $artist['name'];
     }
+
 
     public function getSongIds()
     {
@@ -38,6 +38,10 @@ class Artist
         }
 
         return $array;
+    }
+
+    public function getId(){
+        return $this->id;
     }
 
 }

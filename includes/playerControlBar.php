@@ -190,16 +190,16 @@ function shuffleArray(a) {
 //            AJAX call for artist name
             $.post("includes/handlers/ajax/getArtistJson.php", {artistId: track.artist}, function (data) {
                 var artist = JSON.parse(data);
-                $(".artistName span").text(artist.name);
-                $(".artistName span").attr("onclick", "pageOpen('artist.php?id=" + artist.id + "')");
+                $(".albumInfo .artistName span").text(artist.name);
+                $(".albumInfo .artistName span").attr("onclick", "pageOpen('artist.php?id=" + artist.id + "')");
             });
 
             //            AJAX call for album
             $.post("includes/handlers/ajax/getAlbumJson.php", {albumId: track.album}, function (data) {
                 var album = JSON.parse(data);
-                $(".albumLink img").attr("src", album.art);
-                $(".albumLink img").attr("onclick", "pageOpen('album.php?id=" + album.id + "')");
-                $(".trackName span").attr("onclick", "pageOpen('album.php?id=" + album.id + "')");
+                $(".content .albumLink img").attr("src", album.art);
+                $(".content .albumLink img").attr("onclick", "pageOpen('album.php?id=" + album.id + "')");
+                $(".albumInfo .trackName span").attr("onclick", "pageOpen('album.php?id=" + album.id + "')");
             });
 
 

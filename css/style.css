@@ -104,7 +104,8 @@ input:focus {
 }
 
 .gridContainer h2,
-.songListContainer h2 {
+.songListContainer h2,
+.artistContain h2{
     text-align: center;
 }
 
@@ -465,3 +466,18 @@ width: 32px;
     letter-spacing: 2px;
 
 }
+
+.searchResultRow {
+    padding: 15px 10px;
+}
+
+.searchResultRow:hover {
+    background-color: #150817;
+    transform: scale(1.01);
+}
+
+.noResults {
+    margin: 20px;
+    display:block;
+}
+
