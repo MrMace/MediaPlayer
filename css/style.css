@@ -26,7 +26,7 @@ body {
     background-color: purple;
     font-weight: 400;
     cursor: pointer;
-    border: 1px solid white;
+    border: 1px solid #780380;
 }
 
 .button:hover {
@@ -481,3 +481,14 @@ width: 32px;
     display:block;
 }
 
+/*PlayList Page*/
+
+
+.btnItems .button {
+    display: block;
+    margin: 0 auto 20px auto;
+}
+
+.playlistContain {
+    padding: 10px 0;
+}

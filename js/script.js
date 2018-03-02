@@ -28,6 +28,22 @@ function formatTime(seconds) {
     return mins + ":" + extraZero + seconds;
 }
 
+function createPlaylist() {
+
+    var popUp = prompt("Enter the name of your new playlist.");
+
+    if(popUp != null) {
+        $.post("includes/handlers/ajax/createPlaylist.php", {name: popUp , username: userLoggedIn}).done(function (error) {
+
+            if(error != ""){
+                alert(error);
+                return;
+            }
+        pageOpen("myMusic.php");
+        });
+    }
+}
+
 function pageOpen(url){
 
     if(timer !== null){

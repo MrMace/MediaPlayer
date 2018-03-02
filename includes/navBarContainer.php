@@ -30,12 +30,12 @@
 
             <div class="navBtn">
                 <span role="link" tabindex="0" onclick="pageOpen('profile.php')" class="navBtnLink">
-                    USER
+                    User
                 </span>
             </div>
 
             <div class="navBtn">
-                <span role="link" tabindex="0" onclick="pageOpen('yourMusic.php')"  class="navBtnLink">
+                <span role="link" tabindex="0" onclick="pageOpen('myMusic.php')"  class="navBtnLink">
                     Your Music
                 </span>
             </div>
