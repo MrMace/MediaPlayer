@@ -33,16 +33,34 @@ function createPlaylist() {
     var popUp = prompt("Enter the name of your new playlist.");
 
     if(popUp != null) {
-        $.post("includes/handlers/ajax/createPlaylist.php", {name: popUp , username: userLoggedIn}).done(function (error) {
+        $.post("includes/handlers/ajax/createPlaylist.php", {name: popUp , username: userLoggedIn}).done(function () {
 
-            if(error != ""){
-                alert(error);
-                return;
-            }
+            // if(error != ""){
+            //     alert(error);
+            //     return;
+            // }
         pageOpen("myMusic.php");
         });
     }
 }
+
+function deletePlaylist(plsId) {
+
+var prompt = confirm("Are you sure you want to delete this playlist?");
+
+if(prompt){
+    $.post("includes/handlers/ajax/deletePlaylist.php", {plsId: plsId}).done(function () {
+
+        // if(error != ""){
+        //     alert(error);
+        //     return;
+        // }
+        pageOpen("myMusic.php");
+    });
+}
+
+}
+
 
 function pageOpen(url){
 

@@ -21,6 +21,7 @@ if (isset($_GET['id'])) {
 $album = new Album($connection, $albumId);
 
 $artist = $album->getArtist();
+$artistId = $artist->getId();
 ?>
 
 <div class="albumTopInfo">
@@ -31,7 +32,7 @@ $artist = $album->getArtist();
 
     <div class="albumSectionRight">
         <h1><?php echo $album->getTitle(); ?></h1>
-        <p><?php echo $artist->getName(); ?></p>
+        <p role="link" tabindex="0" onclick="pageOpen('artist.php?id=<?php echo $artistId; ?>')">By <?php echo $artist->getName(); ?></p>
         <p><?php echo $album->getAlbumNumSongs(); ?> Tracks</p>
 
     </div>

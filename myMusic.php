@@ -28,14 +28,18 @@
 
         while ($row = mysqli_fetch_array($queryPlaylist)) {
 
+        $playlist = new Playlist($connection, $row);
 
-            echo "<div class='gridItem'>  
+
+            echo "<div class='gridItem' role='link' tabindex='0' onclick='pageOpen(\"playlist.php?id=" . $playlist->getId(). "\")'>  
    <div class='playlistImg'>
-   <img src='assets/images/placeHolder/playlist.jpg'>
+   
+   <img class='img_on' src='assets/images/placeHolder/playlistIcon.png'>
+   <img class='img_off' src='assets/images/placeHolder/ActivePlaylistIcon.png'>
 </div>
    
   <div class='gridItemInfo'>  "
-                . $row['playlistName'] .
+                . $playlist->getName() .
                 "</div></div>";
 
     }

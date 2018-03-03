@@ -296,7 +296,10 @@ width: 32px;
 
 .navBar .sectionGroup {
     padding: 10px 0;
+
 }
+
+
 
 .navBtn {
     display: block;
@@ -308,14 +311,16 @@ width: 32px;
     position: relative;
 }
 
+.navBtn:hover {
+    transform: scale(1.05);
+    background-color:#150817;;
+}
+
 .navBtnLink {
     text-decoration: none;
-
 }
 
-.navBtnLink:hover {
-    color: purple;
-}
+
 
 /*----------------*/
 
@@ -491,4 +496,76 @@ width: 32px;
 
 .playlistContain {
     padding: 10px 0;
+}
+
+.playlistImg {
+
+    padding: 10px;
+    background-color: rgba(21, 8, 23, 0.69);
+    border-radius: 3px;
+    border: 1px solid rgba(245, 245, 245, 0.71);
+}
+
+.playlistImg:hover{
+    border: 1px solid purple;
+    transform: scale(1.05);
+}
+
+/*.playlistSectionLeft .playlistImg {*/
+    /*padding: 10px;*/
+    /*background-color: rgba(21, 8, 23, 0.69);*/
+    /*border-radius: 3px;*/
+    /*border: 1px solid rgba(245, 245, 245, 0.71);*/
+    /*width: 100%;*/
+    /*max-width: 100px;*/
+    /*height: auto;*/
+/*}*/
+.img_off, .playlistImg:hover .img_on{
+    display:none;
+    transform: scale(1.05);
+}
+.img_on, .playlistImg:hover .img_off{
+    display:block;
+}
+
+
+.playlistTopInfo {
+    display: inline-block;
+    padding: 40px 0 10px 0;
+    width: 100%;
+
+}
+
+.playlistTopInfo .playlistSectionLeft {
+    float: left;
+    width: 29%;
+    max-width: 250px;
+
+}
+
+.playlistTopInfo .playlistSectionLeft img {
+    width: 100%;
+}
+
+.playlistTopInfo .playlistSectionRight {
+    width: 70%;
+    float: left;
+    padding: 5px 10px 5px 40px;
+    box-sizing: border-box;
+}
+
+ .playlistSectionRight h1 {
+    margin-top: 0;
+}
+
+.playlistTopInfo .playlistSectionRight p,
+.trackListRow span {
+    font-weight: 200;
+    color: #686c7d;
+}
+.playlistPageImg {
+    padding: 10px;
+    background-color: rgba(21, 8, 23, 0.69);
+    border-radius: 3px;
+    /*border: 1px solid purple;*/
 }
