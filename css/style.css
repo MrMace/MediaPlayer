@@ -313,7 +313,7 @@ width: 32px;
 
 .navBtn:hover {
     transform: scale(1.05);
-    background-color:#150817;;
+    background-color:rgba(21, 0, 21, 0.47);
 }
 
 .navBtnLink {
@@ -568,4 +568,37 @@ width: 32px;
     background-color: rgba(21, 8, 23, 0.69);
     border-radius: 3px;
     /*border: 1px solid purple;*/
+}
+
+
+.optionMenu {
+    background-color: #150817;
+    width: 150px;
+    border: 1px solid #1e0720;
+    border-radius: 2px;
+    position:fixed;
+    z-index: 500;
+    display:none;
+}
+
+.optionMenu .item {
+    width:100%;
+    padding: 10px 20px;
+    box-sizing: border-box;
+    font-weight: 400;
+    height: auto;
+    cursor: pointer;
+    color: whitesmoke;
+    background-color: #150817;
+    border:none;
+}
+
+.optionMenu .item:hover {
+    transform: scale(1.05);
+    background-color:#1e0720;
+}
+
+.optionMenu select {
+    border:none;
+    -webkit-appearance: none;
 }

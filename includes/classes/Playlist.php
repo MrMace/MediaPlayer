@@ -43,21 +43,38 @@ class Playlist
     }
 
     public function getNumSongs() {
-        $query = mysqli_query($this->connection, "SELECT plsSongId FROM playlistsongs WHERE plsId = '$this->id'");
+        $query = mysqli_query($this->connection, "SELECT trackId FROM playlistsongs WHERE plsId = '$this->id'");
         return mysqli_num_rows($query);
     }
 
     public function getSongIds()
     {
 
-        $query = mysqli_query($this->connection, "SELECT plsSongId FROM playlistSongs WHERE plsId='$this->id' ORDER BY plsOrder ASC");
+        $query = mysqli_query($this->connection, "SELECT trackId FROM playlistsongs WHERE plsId='$this->id' ORDER BY plsOrder ASC");
         $array = array();
 
         while ($row = mysqli_fetch_array($query)) {
-            array_push($array, $row['plsSongId']);
+            array_push($array, $row['trackId']);
         }
 
         return $array;
+    }
+
+    public static function addToPlaylistDropdown($connection, $username){
+$dropdown = ' <select class="item playlist">
+        <option value="">Add to Playlist</option>';
+
+$query = mysqli_query($connection, "SELECT id, playlistName FROM playlists WHERE playlistOwner = '$username'");
+while($row = mysqli_fetch_array($query)){
+    $id= $row['id'];
+    $playlistName = $row['playlistName'];
+
+    $dropdown = $dropdown . "<option value='$id'>$playlistName</option>";
+}
+
+
+return $dropdown . "</select>";
+
     }
 
 }

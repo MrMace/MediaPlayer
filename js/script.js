@@ -9,6 +9,30 @@ var shuffle = false;
 var userLoggedIn;
 var timer;
 
+$(window).scroll(function(){
+    hideOptionMenu();
+});
+
+$(document).click(function(click){
+    var target = $(click.target);
+
+    if(!target.hasClass("item") && !target.hasClass("optionsBtn")){
+hideOptionMenu();
+    }
+});
+
+$(document).on("change", "select.playlist" , function() {
+    var plsId = $(this).val();
+    var trackId = $(this).prev(".trackId").val();
+
+    console.log("playlistId " + plsId );
+    console.log("trackId " + trackId );
+    $.post("includes/handlers/ajax/addPlaylist.php", {plsId: plsId, trackId: trackId}).done(function(){
+        hideOptionMenu();
+        $(this).val("");
+    })
+});
+
 function formatTime(seconds) {
     var time = Math.round(seconds);
     //rounds down
@@ -141,4 +165,28 @@ function Audio() {
         //current time num seconds passed in.
         this.audio.currentTime = seconds;
     }
+}
+
+function showOptionMenu(button){
+    var trackId = $(button).prevAll(".trackId").val();
+var menu = $(".optionMenu");
+var menuWidth = menu.width();
+menu.find(".trackId").val(trackId);
+//from top window
+var scrollTop = $(window).scrollTop();
+// disance from top doc
+var elementOffSet = $(button).offset().top;
+
+var top = elementOffSet - scrollTop;
+var left = $(button).position().left;
+    menu.css({ "top": top + "px", "left": left - menuWidth + "px", "display": "inline" });
+
+}
+
+function hideOptionMenu() {
+var menu = $(".optionMenu");
+if(menu.css("display") != "none") {
+    menu.css("display", "none");
+}
+
 }
