@@ -21,15 +21,25 @@ hideOptionMenu();
     }
 });
 
+
+// $(document).mouseout(function(select){
+//     var target = $(select.target);
+//
+//     if(!target.hasClass("item") && !target.hasClass("optionsBtn")){
+//         hideOptionMenu();
+//     }
+// });
+
 $(document).on("change", "select.playlist" , function() {
-    var plsId = $(this).val();
-    var trackId = $(this).prev(".trackId").val();
+    var select = $(this);
+    var plsId = select.val();
+    var trackId = select.prev(".trackId").val();
 
     console.log("playlistId " + plsId );
     console.log("trackId " + trackId );
     $.post("includes/handlers/ajax/addPlaylist.php", {plsId: plsId, trackId: trackId}).done(function(){
         hideOptionMenu();
-        $(this).val("");
+        select.val("");
     })
 });
 
@@ -67,6 +77,19 @@ function createPlaylist() {
         });
     }
 }
+
+ function removeTrackFromPlaylist(button, plsId){
+    var trackId = $(button).prevAll(".trackId").val();
+
+     $.post("includes/handlers/ajax/removeFromPlaylist.php", {plsId: plsId, trackId: trackId}).done(function () {
+
+         // if(error != ""){
+         //     alert(error);
+         //     return;
+         // }
+         pageOpen("playlist.php?id=" + plsId);
+     });
+ }
 
 function deletePlaylist(plsId) {
 

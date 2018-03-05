@@ -88,8 +88,7 @@ $artistId = $artist->getId();
 <nav class="optionMenu">
     <input type="hidden" class="trackId">
 <?php echo Playlist::addToPlaylistDropdown($connection, $userLoggedIn->getUsername()); ?>
-    <div class="item">Add to playlist</div>
-    <div class="item">Add to playlist</div>
+
 </nav>
 
 

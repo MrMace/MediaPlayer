@@ -54,10 +54,11 @@ $playlistOwner = new User($connection, $playlist->getOwner());
 
         <?php
         $songIdArray = $playlist->getSongIds();
-        $i = 1;
-        foreach ($songIdArray as $plsSongId) {
 
-            $playlistTrack = new Song($connection, $plsSongId);
+        $i = 1;
+        foreach ($songIdArray as $trackId) {
+
+            $playlistTrack = new Song($connection, $trackId);
             $songArtist = $playlistTrack->getArtist();
 //output all the tracks
             echo "<li class='trackListRow'>
@@ -72,8 +73,10 @@ $playlistOwner = new User($connection, $playlist->getOwner());
 </div>
 
 <div class='trackOptions'>
-<img class='optionsBtn' src='assets/images/icons/more.png'/>
+<input type='hidden' class='trackId' value='".  $playlistTrack->getId()  . "'>
+<img class='optionsBtn' src='assets/images/icons/more.png' onclick='showOptionMenu(this)'/>
 </div>
+
 <div class='songDuration'>
 <span class='duration'>" . $playlistTrack->getDuration() . "</span>
 </div>
@@ -95,4 +98,10 @@ $playlistOwner = new User($connection, $playlist->getOwner());
 
 </div>
 
+<nav class="optionMenu">
+    <input type="hidden" class="trackId">
+    <?php echo Playlist::addToPlaylistDropdown($connection, $userLoggedIn->getUsername()); ?>
+    <div class="item" onclick="removeTrackFromPlaylist(this, '<?php echo $plsId;  ?>')">Remove From Playlist</div>
+
+</nav>
 

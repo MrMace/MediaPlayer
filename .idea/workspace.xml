@@ -2,12 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="47153553-d4a3-4748-ae9a-32f6d08ad13f" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/includes/handlers/ajax/addPlaylist.php" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/includes/handlers/ajax/removeFromPlaylist.php" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change beforePath="$PROJECT_DIR$/album.php" afterPath="$PROJECT_DIR$/album.php" />
-      <change beforePath="$PROJECT_DIR$/css/style.css" afterPath="$PROJECT_DIR$/css/style.css" />
-      <change beforePath="$PROJECT_DIR$/includes/classes/Playlist.php" afterPath="$PROJECT_DIR$/includes/classes/Playlist.php" />
+      <change beforePath="$PROJECT_DIR$/artist.php" afterPath="$PROJECT_DIR$/artist.php" />
       <change beforePath="$PROJECT_DIR$/js/script.js" afterPath="$PROJECT_DIR$/js/script.js" />
+      <change beforePath="$PROJECT_DIR$/playlist.php" afterPath="$PROJECT_DIR$/playlist.php" />
+      <change beforePath="$PROJECT_DIR$/search.php" afterPath="$PROJECT_DIR$/search.php" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -29,89 +30,41 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="index.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/index.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="187">
-              <caret line="16" column="0" lean-forward="true" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="register.php" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/register.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="733">
-              <caret line="76" column="31" lean-forward="false" selection-start-line="76" selection-start-column="31" selection-end-line="76" selection-end-column="31" />
-              <folding>
-                <marker date="1516508269966" expanded="true" signature="795:898" ph="..." />
-                <marker date="1516508269966" expanded="true" signature="824:887" ph="{...}" />
-                <marker date="1516508269966" expanded="true" signature="928:1031" ph="..." />
-                <marker date="1516508269966" expanded="true" signature="957:1020" ph="{...}" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="script.js" pinned="false" current-in-tab="false">
+      <file leaf-file-name="script.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/js/script.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="459">
-              <caret line="27" column="2" lean-forward="true" selection-start-line="27" selection-start-column="2" selection-end-line="28" selection-end-column="39" />
+            <state relative-caret-position="340">
+              <caret line="81" column="54" lean-forward="true" selection-start-line="81" selection-start-column="54" selection-end-line="81" selection-end-column="54" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="addPlaylist.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/includes/handlers/ajax/addPlaylist.php">
+      <file leaf-file-name="removeFromPlaylist.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/includes/handlers/ajax/removeFromPlaylist.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="408">
-              <caret line="22" column="0" lean-forward="true" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
+            <state relative-caret-position="255">
+              <caret line="15" column="33" lean-forward="false" selection-start-line="15" selection-start-column="33" selection-end-line="15" selection-end-column="33" />
               <folding>
-                <marker date="1520105669731" expanded="true" signature="293:375" ph="SELECT MAX(p... playlistsongs" />
-                <marker date="1520105669731" expanded="true" signature="497:567" ph="INSERT INTO playlistsongs... " />
-                <marker date="1520105669731" expanded="true" signature="541:567" ph="INSERT INTO playlistsongs... " />
+                <marker date="1520179892627" expanded="true" signature="284:330" ph="DELETE FROM playlistsongs... " />
+                <marker date="1520179892627" expanded="true" signature="284:353" ph="DELETE FROM playlistsongs... " />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="style.css" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/css/style.css">
+      <file leaf-file-name="playlist.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/playlist.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="793">
-              <caret line="602" column="29" lean-forward="false" selection-start-line="602" selection-start-column="29" selection-end-line="602" selection-end-column="29" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="album.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/album.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="833">
-              <caret line="89" column="62" lean-forward="true" selection-start-line="89" selection-start-column="62" selection-end-line="89" selection-end-column="62" />
+            <state relative-caret-position="1666">
+              <caret line="103" column="82" lean-forward="false" selection-start-line="103" selection-start-column="82" selection-end-line="103" selection-end-column="82" />
               <folding>
-                <marker date="1520103726735" expanded="true" signature="1152:1815" ph="..." />
-                <marker date="1520103726735" expanded="true" signature="1177:1254" ph="..." />
-                <marker date="1520103726735" expanded="true" signature="1177:1255" ph="..." />
-                <marker date="1520103726735" expanded="true" signature="1177:1282" ph="..." />
-                <marker date="1520103726735" expanded="true" signature="1177:1348" ph="..." />
-                <marker date="1520103726735" expanded="true" signature="1177:1509" ph="..." />
-                <marker date="1520103726735" expanded="true" signature="1373:1398" ph="..." />
-                <marker date="1520103726735" expanded="true" signature="1373:1399" ph="..." />
-                <marker date="1520103726735" expanded="true" signature="1373:1462" ph="..." />
-                <marker date="1520103726735" expanded="true" signature="1373:1463" ph="..." />
-                <marker date="1520103726735" expanded="true" signature="1373:1507" ph="..." />
-                <marker date="1520103726735" expanded="true" signature="1535:1580" ph="..." />
-                <marker date="1520103726735" expanded="true" signature="1535:1581" ph="..." />
-                <marker date="1520103726735" expanded="true" signature="1535:1710" ph="..." />
-                <marker date="1520103726735" expanded="true" signature="1737:1761" ph="..." />
-                <marker date="1520103726735" expanded="true" signature="1737:1762" ph="..." />
-                <marker date="1520103726735" expanded="true" signature="1737:1809" ph="..." />
-                <marker date="1520103726735" expanded="true" signature="1867:1927" ph="..." />
+                <marker date="1520201494332" expanded="true" signature="1353:2028" ph="..." />
+                <marker date="1520201494332" expanded="true" signature="1378:1552" ph="..." />
+                <marker date="1520201494332" expanded="true" signature="1577:1713" ph="..." />
+                <marker date="1520201494332" expanded="true" signature="1741:1787" ph="..." />
+                <marker date="1520201494332" expanded="true" signature="1741:1919" ph="..." />
+                <marker date="1520201494332" expanded="true" signature="1947:2022" ph="..." />
               </folding>
             </state>
           </provider>
@@ -120,7 +73,7 @@
       <file leaf-file-name="Playlist.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/includes/classes/Playlist.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="453">
+            <state relative-caret-position="862">
               <caret line="66" column="89" lean-forward="false" selection-start-line="66" selection-start-column="89" selection-end-line="66" selection-end-column="89" />
               <folding>
                 <marker date="1520106061410" expanded="true" signature="375:415" ph="SELECT * FRO... playlists" />
@@ -131,6 +84,35 @@
                 <marker date="1520106061410" expanded="true" signature="1654:1716" ph="SELECT id, n... playlists" />
                 <marker date="1520106061410" expanded="true" signature="1654:1717" ph="SELECT id, n... playlists" />
                 <marker date="1520106061410" expanded="true" signature="1654:1726" ph="SELECT id, p... playlists" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="album.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/album.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="176">
+              <caret line="60" column="41" lean-forward="false" selection-start-line="60" selection-start-column="41" selection-end-line="60" selection-end-column="41" />
+              <folding>
+                <marker date="1520178923603" expanded="true" signature="1152:1815" ph="..." />
+                <marker date="1520178923603" expanded="true" signature="1177:1254" ph="..." />
+                <marker date="1520178923603" expanded="true" signature="1177:1255" ph="..." />
+                <marker date="1520178923603" expanded="true" signature="1177:1282" ph="..." />
+                <marker date="1520178923603" expanded="true" signature="1177:1348" ph="..." />
+                <marker date="1520178923603" expanded="true" signature="1177:1509" ph="..." />
+                <marker date="1520178923603" expanded="true" signature="1373:1398" ph="..." />
+                <marker date="1520178923603" expanded="true" signature="1373:1399" ph="..." />
+                <marker date="1520178923603" expanded="true" signature="1373:1462" ph="..." />
+                <marker date="1520178923603" expanded="true" signature="1373:1463" ph="..." />
+                <marker date="1520178923603" expanded="true" signature="1373:1507" ph="..." />
+                <marker date="1520178923603" expanded="true" signature="1535:1580" ph="..." />
+                <marker date="1520178923603" expanded="true" signature="1535:1581" ph="..." />
+                <marker date="1520178923603" expanded="true" signature="1535:1710" ph="..." />
+                <marker date="1520178923603" expanded="true" signature="1737:1761" ph="..." />
+                <marker date="1520178923603" expanded="true" signature="1737:1762" ph="..." />
+                <marker date="1520178923603" expanded="true" signature="1737:1809" ph="..." />
+                <marker date="1520178923603" expanded="true" signature="1867:1927" ph="..." />
               </folding>
             </state>
           </provider>
@@ -210,21 +192,22 @@
         <option value="$PROJECT_DIR$/includes/header.php" />
         <option value="$PROJECT_DIR$/browse.php" />
         <option value="$PROJECT_DIR$/index.php" />
-        <option value="$PROJECT_DIR$/artist.php" />
         <option value="$PROJECT_DIR$/includes/classes/Artist.php" />
         <option value="$PROJECT_DIR$/includes/playerControlBar.php" />
-        <option value="$PROJECT_DIR$/search.php" />
         <option value="$PROJECT_DIR$/includes/navBarContainer.php" />
         <option value="$PROJECT_DIR$/includes/handlers/ajax/createPlaylist.php" />
         <option value="$PROJECT_DIR$/includes/classes/User.php" />
         <option value="$PROJECT_DIR$/includes/includedFiles.php" />
         <option value="$PROJECT_DIR$/myMusic.php" />
-        <option value="$PROJECT_DIR$/playlist.php" />
         <option value="$PROJECT_DIR$/includes/handlers/ajax/deletePlaylist.php" />
         <option value="$PROJECT_DIR$/css/style.css" />
-        <option value="$PROJECT_DIR$/album.php" />
         <option value="$PROJECT_DIR$/includes/handlers/ajax/addPlaylist.php" />
         <option value="$PROJECT_DIR$/includes/classes/Playlist.php" />
+        <option value="$PROJECT_DIR$/album.php" />
+        <option value="$PROJECT_DIR$/artist.php" />
+        <option value="$PROJECT_DIR$/search.php" />
+        <option value="$PROJECT_DIR$/includes/handlers/ajax/removeFromPlaylist.php" />
+        <option value="$PROJECT_DIR$/playlist.php" />
         <option value="$PROJECT_DIR$/js/script.js" />
       </list>
     </option>
@@ -251,8 +234,8 @@
     </include_path>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="904" />
-    <option name="width" value="1016" />
+    <option name="x" value="960" />
+    <option name="width" value="960" />
     <option name="height" value="1040" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -395,7 +378,7 @@
       <workItem from="1516997594265" duration="689000" />
       <workItem from="1517513540520" duration="62543000" />
       <workItem from="1519347321894" duration="1869000" />
-      <workItem from="1519418721052" duration="89354000" />
+      <workItem from="1519418721052" duration="104653000" />
     </task>
     <task id="LOCAL-00001" summary="Reg updated, sanitize">
       <created>1515969759107</created>
@@ -705,11 +688,18 @@
       <option name="project" value="LOCAL" />
       <updated>1520044757885</updated>
     </task>
-    <option name="localTasksCounter" value="45" />
+    <task id="LOCAL-00045" summary="updateplaylist options">
+      <created>1520169943803</created>
+      <option name="number" value="00045" />
+      <option name="presentableId" value="LOCAL-00045" />
+      <option name="project" value="LOCAL" />
+      <updated>1520169943803</updated>
+    </task>
+    <option name="localTasksCounter" value="46" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="227954000" />
+    <option name="totallyTimeSpent" value="243253000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -721,7 +711,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="904" y="0" width="1016" height="1040" extended-state="0" />
+    <frame x="960" y="0" width="960" height="1040" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32934782" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -731,7 +721,7 @@
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.17282608" sideWeight="0.49577168" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Remote Host" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32942432" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25104603" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.27" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Docker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32963374" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32964602" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -783,7 +773,6 @@
     <ignored-roots>
       <path value="$PROJECT_DIR$/Media-Player" />
     </ignored-roots>
-    <MESSAGE value="Album class Created" />
     <MESSAGE value="Starting to display Album on Album page" />
     <MESSAGE value="More Album page completed" />
     <MESSAGE value="Created New class for tracks" />
@@ -808,7 +797,8 @@
     <MESSAGE value="search artist, albums" />
     <MESSAGE value="playlist" />
     <MESSAGE value="create playlist, playlist delete" />
-    <option name="LAST_COMMIT_MESSAGE" value="create playlist, playlist delete" />
+    <MESSAGE value="updateplaylist options" />
+    <option name="LAST_COMMIT_MESSAGE" value="updateplaylist options" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
   <component name="XDebuggerManager">
@@ -816,13 +806,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/includes/classes/Account.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="782">
-          <caret line="51" column="68" lean-forward="true" selection-start-line="51" selection-start-column="68" selection-end-line="51" selection-end-column="68" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/includes/handlers/login_handler.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="255">
@@ -916,6 +899,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="357">
           <caret line="26" column="0" lean-forward="false" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -937,6 +921,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="136">
           <caret line="12" column="0" lean-forward="true" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1024,45 +1009,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/search.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="227">
-          <caret line="155" column="9" lean-forward="false" selection-start-line="155" selection-start-column="2" selection-end-line="177" selection-end-column="6" />
-          <folding>
-            <marker date="1519934115615" expanded="true" signature="1273:1319" ph="SELECT id FR... songs" />
-            <marker date="1519934115615" expanded="true" signature="1273:1328" ph="SELECT id FR... songs" />
-            <marker date="1519934115615" expanded="true" signature="1933:2490" ph="..." />
-            <marker date="1519934115615" expanded="true" signature="1958:2130" ph="..." />
-            <marker date="1519934115615" expanded="true" signature="2155:2289" ph="..." />
-            <marker date="1519934115615" expanded="true" signature="2317:2385" ph="..." />
-            <marker date="1519934115615" expanded="true" signature="2412:2484" ph="..." />
-            <marker date="1519934115615" expanded="true" signature="2933:2980" ph="SELECT id FR... artists" />
-            <marker date="1519934115615" expanded="true" signature="2933:2989" ph="SELECT id FR... artists" />
-            <marker date="1519934115615" expanded="true" signature="3289:3558" ph="..." />
-            <marker date="1519934115615" expanded="true" signature="3330:3412" ph="..." />
-            <marker date="1519934115615" expanded="true" signature="3330:3413" ph="..." />
-            <marker date="1519934115615" expanded="true" signature="3330:3444" ph="..." />
-            <marker date="1519934115615" expanded="true" signature="3330:3447" ph="..." />
-            <marker date="1519934115615" expanded="true" signature="3330:3527" ph="..." />
-            <marker date="1519934115615" expanded="true" signature="3330:3544" ph="..." />
-            <marker date="1519934115615" expanded="true" signature="3330:3551" ph="..." />
-            <marker date="1519934115615" expanded="true" signature="3330:3558" ph="..." />
-            <marker date="1519934115615" expanded="true" signature="3686:3742" ph="SELECT * FRO... albums" />
-            <marker date="1519934115615" expanded="true" signature="3686:3744" ph="SELECT * FRO... albums" />
-            <marker date="1519934115615" expanded="true" signature="3984:4221" ph="..." />
-            <marker date="1519934115615" expanded="true" signature="4074:4215" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/includes/includedFiles.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="17" column="38" lean-forward="false" selection-start-line="17" selection-start-column="38" selection-end-line="17" selection-end-column="38" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/includes/classes/Account.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="553">
@@ -1109,67 +1055,12 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/includes/classes/Song.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="327">
-          <caret line="57" column="25" lean-forward="true" selection-start-line="57" selection-start-column="25" selection-end-line="57" selection-end-column="25" />
-          <folding>
-            <marker date="1519513671745" expanded="true" signature="482:522" ph="SELECT * FRO... songs" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/playlist.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="659">
-          <caret line="49" column="0" lean-forward="true" selection-start-line="49" selection-start-column="0" selection-end-line="49" selection-end-column="0" />
-          <folding>
-            <marker date="1520030048449" expanded="true" signature="1016:1341" ph="..." />
-            <marker date="1520030048449" expanded="true" signature="1042:1341" ph="..." />
-            <marker date="1520030048449" expanded="true" signature="1356:1920" ph="..." />
-            <marker date="1520030048449" expanded="true" signature="1381:1555" ph="..." />
-            <marker date="1520030048449" expanded="true" signature="1580:1716" ph="..." />
-            <marker date="1520030048449" expanded="true" signature="1744:1812" ph="..." />
-            <marker date="1520030048449" expanded="true" signature="1877:1914" ph="..." />
-            <marker date="1520030048449" expanded="true" signature="1877:1920" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/artist.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="41" column="44" lean-forward="true" selection-start-line="41" selection-start-column="44" selection-end-line="41" selection-end-column="44" />
-          <folding>
-            <marker date="1519883395536" expanded="true" signature="1163:1719" ph="..." />
-            <marker date="1519883395536" expanded="true" signature="1188:1359" ph="..." />
-            <marker date="1519883395536" expanded="true" signature="1384:1518" ph="..." />
-            <marker date="1519883395536" expanded="true" signature="1546:1614" ph="..." />
-            <marker date="1519883395536" expanded="true" signature="1641:1713" ph="..." />
-            <marker date="1519883395536" expanded="true" signature="2144:2190" ph="SELECT * FRO... albums" />
-            <marker date="1519883395536" expanded="true" signature="2285:2514" ph="..." />
-            <marker date="1519883395536" expanded="true" signature="2375:2508" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/includes/playerControlBar.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="285">
           <caret line="257" column="38" lean-forward="false" selection-start-line="257" selection-start-column="38" selection-end-line="257" selection-end-column="38" />
           <folding>
             <marker date="1519932830716" expanded="true" signature="167:211" ph="SELECT * FRO... songs" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/includes/handlers/ajax/deletePlaylist.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="9" column="0" lean-forward="true" selection-start-line="8" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
-          <folding>
-            <marker date="1520030226574" expanded="true" signature="225:264" ph="DELETE FROM playlists... " />
-            <marker date="1520030226574" expanded="true" signature="309:355" ph="DELETE FROM playlistsongs... " />
           </folding>
         </state>
       </provider>
@@ -1203,9 +1094,119 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/includes/handlers/ajax/addPlaylist.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="408">
+          <caret line="22" column="0" lean-forward="false" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
+          <folding>
+            <marker date="1520105669731" expanded="true" signature="293:375" ph="SELECT MAX(p... playlistsongs" />
+            <marker date="1520105669731" expanded="true" signature="497:567" ph="INSERT INTO playlistsongs... " />
+            <marker date="1520105669731" expanded="true" signature="541:567" ph="INSERT INTO playlistsongs... " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/search.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="553">
+          <caret line="101" column="6" lean-forward="false" selection-start-line="101" selection-start-column="6" selection-end-line="101" selection-end-column="6" />
+          <folding>
+            <marker date="1520179152962" expanded="true" signature="1273:1319" ph="SELECT id FR... songs" />
+            <marker date="1520179152962" expanded="true" signature="1273:1328" ph="SELECT id FR... songs" />
+            <marker date="1520179152962" expanded="true" signature="1933:2597" ph="..." />
+            <marker date="1520179152962" expanded="true" signature="1958:2130" ph="..." />
+            <marker date="1520179152962" expanded="true" signature="2155:2289" ph="..." />
+            <marker date="1520179152962" expanded="true" signature="2317:2492" ph="..." />
+            <marker date="1520179152962" expanded="true" signature="2519:2591" ph="..." />
+            <marker date="1520179152962" expanded="true" signature="3040:3087" ph="SELECT id FR... artists" />
+            <marker date="1520179152962" expanded="true" signature="3040:3096" ph="SELECT id FR... artists" />
+            <marker date="1520179152962" expanded="true" signature="3396:3665" ph="..." />
+            <marker date="1520179152962" expanded="true" signature="3437:3519" ph="..." />
+            <marker date="1520179152962" expanded="true" signature="3437:3520" ph="..." />
+            <marker date="1520179152962" expanded="true" signature="3437:3551" ph="..." />
+            <marker date="1520179152962" expanded="true" signature="3437:3554" ph="..." />
+            <marker date="1520179152962" expanded="true" signature="3437:3634" ph="..." />
+            <marker date="1520179152962" expanded="true" signature="3437:3651" ph="..." />
+            <marker date="1520179152962" expanded="true" signature="3437:3658" ph="..." />
+            <marker date="1520179152962" expanded="true" signature="3437:3665" ph="..." />
+            <marker date="1520179152962" expanded="true" signature="3793:3849" ph="SELECT * FRO... albums" />
+            <marker date="1520179152962" expanded="true" signature="3793:3851" ph="SELECT * FRO... albums" />
+            <marker date="1520179152962" expanded="true" signature="4091:4328" ph="..." />
+            <marker date="1520179152962" expanded="true" signature="4181:4322" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/includes/handlers/ajax/deletePlaylist.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="14" column="18" lean-forward="true" selection-start-line="8" selection-start-column="6" selection-end-line="18" selection-end-column="1" />
+          <folding>
+            <marker date="1520030226574" expanded="true" signature="225:264" ph="DELETE FROM playlists... " />
+            <marker date="1520030226574" expanded="true" signature="309:355" ph="DELETE FROM playlistsongs... " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="16" column="0" lean-forward="false" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/includes/includedFiles.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="17" column="38" lean-forward="false" selection-start-line="17" selection-start-column="38" selection-end-line="17" selection-end-column="38" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/register.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="478">
+          <caret line="64" column="0" lean-forward="false" selection-start-line="64" selection-start-column="0" selection-end-line="64" selection-end-column="0" />
+          <folding>
+            <marker date="1516508269966" expanded="true" signature="795:898" ph="..." />
+            <marker date="1516508269966" expanded="true" signature="824:887" ph="{...}" />
+            <marker date="1516508269966" expanded="true" signature="928:1031" ph="..." />
+            <marker date="1516508269966" expanded="true" signature="957:1020" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/includes/classes/Song.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="293">
+          <caret line="24" column="20" lean-forward="false" selection-start-line="24" selection-start-column="20" selection-end-line="24" selection-end-column="20" />
+          <folding>
+            <marker date="1519513671745" expanded="true" signature="482:522" ph="SELECT * FRO... songs" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/artist.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="482">
+          <caret line="72" column="6" lean-forward="false" selection-start-line="72" selection-start-column="6" selection-end-line="72" selection-end-column="6" />
+          <folding>
+            <marker date="1520179030102" expanded="true" signature="1163:1826" ph="..." />
+            <marker date="1520179030102" expanded="true" signature="1188:1359" ph="..." />
+            <marker date="1520179030102" expanded="true" signature="1384:1518" ph="..." />
+            <marker date="1520179030102" expanded="true" signature="1546:1721" ph="..." />
+            <marker date="1520179030102" expanded="true" signature="1748:1820" ph="..." />
+            <marker date="1520179030102" expanded="true" signature="2251:2297" ph="SELECT * FRO... albums" />
+            <marker date="1520179030102" expanded="true" signature="2392:2621" ph="..." />
+            <marker date="1520179030102" expanded="true" signature="2482:2615" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/includes/classes/Playlist.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="453">
+        <state relative-caret-position="862">
           <caret line="66" column="89" lean-forward="false" selection-start-line="66" selection-start-column="89" selection-end-line="66" selection-end-column="89" />
           <folding>
             <marker date="1520106061410" expanded="true" signature="375:415" ph="SELECT * FRO... playlists" />
@@ -1220,71 +1221,64 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/album.php">
+    <entry file="file://$PROJECT_DIR$/includes/handlers/ajax/removeFromPlaylist.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="833">
-          <caret line="89" column="62" lean-forward="true" selection-start-line="89" selection-start-column="62" selection-end-line="89" selection-end-column="62" />
+        <state relative-caret-position="255">
+          <caret line="15" column="33" lean-forward="false" selection-start-line="15" selection-start-column="33" selection-end-line="15" selection-end-column="33" />
           <folding>
-            <marker date="1520103726735" expanded="true" signature="1152:1815" ph="..." />
-            <marker date="1520103726735" expanded="true" signature="1177:1254" ph="..." />
-            <marker date="1520103726735" expanded="true" signature="1177:1255" ph="..." />
-            <marker date="1520103726735" expanded="true" signature="1177:1282" ph="..." />
-            <marker date="1520103726735" expanded="true" signature="1177:1348" ph="..." />
-            <marker date="1520103726735" expanded="true" signature="1177:1509" ph="..." />
-            <marker date="1520103726735" expanded="true" signature="1373:1398" ph="..." />
-            <marker date="1520103726735" expanded="true" signature="1373:1399" ph="..." />
-            <marker date="1520103726735" expanded="true" signature="1373:1462" ph="..." />
-            <marker date="1520103726735" expanded="true" signature="1373:1463" ph="..." />
-            <marker date="1520103726735" expanded="true" signature="1373:1507" ph="..." />
-            <marker date="1520103726735" expanded="true" signature="1535:1580" ph="..." />
-            <marker date="1520103726735" expanded="true" signature="1535:1581" ph="..." />
-            <marker date="1520103726735" expanded="true" signature="1535:1710" ph="..." />
-            <marker date="1520103726735" expanded="true" signature="1737:1761" ph="..." />
-            <marker date="1520103726735" expanded="true" signature="1737:1762" ph="..." />
-            <marker date="1520103726735" expanded="true" signature="1737:1809" ph="..." />
-            <marker date="1520103726735" expanded="true" signature="1867:1927" ph="..." />
+            <marker date="1520179892627" expanded="true" signature="284:330" ph="DELETE FROM playlistsongs... " />
+            <marker date="1520179892627" expanded="true" signature="284:353" ph="DELETE FROM playlistsongs... " />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/includes/handlers/ajax/addPlaylist.php">
+    <entry file="file://$PROJECT_DIR$/album.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="408">
-          <caret line="22" column="0" lean-forward="true" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
+        <state relative-caret-position="176">
+          <caret line="60" column="41" lean-forward="false" selection-start-line="60" selection-start-column="41" selection-end-line="60" selection-end-column="41" />
           <folding>
-            <marker date="1520105669731" expanded="true" signature="293:375" ph="SELECT MAX(p... playlistsongs" />
-            <marker date="1520105669731" expanded="true" signature="497:567" ph="INSERT INTO playlistsongs... " />
-            <marker date="1520105669731" expanded="true" signature="541:567" ph="INSERT INTO playlistsongs... " />
+            <marker date="1520178923603" expanded="true" signature="1152:1815" ph="..." />
+            <marker date="1520178923603" expanded="true" signature="1177:1254" ph="..." />
+            <marker date="1520178923603" expanded="true" signature="1177:1255" ph="..." />
+            <marker date="1520178923603" expanded="true" signature="1177:1282" ph="..." />
+            <marker date="1520178923603" expanded="true" signature="1177:1348" ph="..." />
+            <marker date="1520178923603" expanded="true" signature="1177:1509" ph="..." />
+            <marker date="1520178923603" expanded="true" signature="1373:1398" ph="..." />
+            <marker date="1520178923603" expanded="true" signature="1373:1399" ph="..." />
+            <marker date="1520178923603" expanded="true" signature="1373:1462" ph="..." />
+            <marker date="1520178923603" expanded="true" signature="1373:1463" ph="..." />
+            <marker date="1520178923603" expanded="true" signature="1373:1507" ph="..." />
+            <marker date="1520178923603" expanded="true" signature="1535:1580" ph="..." />
+            <marker date="1520178923603" expanded="true" signature="1535:1581" ph="..." />
+            <marker date="1520178923603" expanded="true" signature="1535:1710" ph="..." />
+            <marker date="1520178923603" expanded="true" signature="1737:1761" ph="..." />
+            <marker date="1520178923603" expanded="true" signature="1737:1762" ph="..." />
+            <marker date="1520178923603" expanded="true" signature="1737:1809" ph="..." />
+            <marker date="1520178923603" expanded="true" signature="1867:1927" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/playlist.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1666">
+          <caret line="103" column="82" lean-forward="false" selection-start-line="103" selection-start-column="82" selection-end-line="103" selection-end-column="82" />
+          <folding>
+            <marker date="1520201494332" expanded="true" signature="1353:2028" ph="..." />
+            <marker date="1520201494332" expanded="true" signature="1378:1552" ph="..." />
+            <marker date="1520201494332" expanded="true" signature="1577:1713" ph="..." />
+            <marker date="1520201494332" expanded="true" signature="1741:1787" ph="..." />
+            <marker date="1520201494332" expanded="true" signature="1741:1919" ph="..." />
+            <marker date="1520201494332" expanded="true" signature="1947:2022" ph="..." />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/js/script.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="459">
-          <caret line="27" column="2" lean-forward="true" selection-start-line="27" selection-start-column="2" selection-end-line="28" selection-end-column="39" />
+        <state relative-caret-position="340">
+          <caret line="81" column="54" lean-forward="true" selection-start-line="81" selection-start-column="54" selection-end-line="81" selection-end-column="54" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/index.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="16" column="0" lean-forward="true" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/register.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="733">
-          <caret line="76" column="31" lean-forward="false" selection-start-line="76" selection-start-column="31" selection-end-line="76" selection-end-column="31" />
-          <folding>
-            <marker date="1516508269966" expanded="true" signature="795:898" ph="..." />
-            <marker date="1516508269966" expanded="true" signature="824:887" ph="{...}" />
-            <marker date="1516508269966" expanded="true" signature="928:1031" ph="..." />
-            <marker date="1516508269966" expanded="true" signature="957:1020" ph="{...}" />
-          </folding>
         </state>
       </provider>
     </entry>
