@@ -13,6 +13,11 @@ $(window).scroll(function(){
     hideOptionMenu();
 });
 
+function logout(){
+    $.post("includes/handlers/ajax/logout.php");
+    location.reload();
+}
+
 $(document).click(function(click){
     var target = $(click.target);
 
@@ -212,4 +217,11 @@ if(menu.css("display") != "none") {
     menu.css("display", "none");
 }
 
+}
+
+function updateEmail(emailClass){
+    var emailVal = $("." + emailClass).val();
+    $.post("includes/handlers/ajax/updateEmail.php", {email: emailVal, username: userLoggedIn}).done(function(response){
+        $("." + emailClass).nextAll(".message").text(response);
+    })
 }

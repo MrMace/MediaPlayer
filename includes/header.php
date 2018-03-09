@@ -12,17 +12,21 @@
 <?php
 
 include("includes/config.php");
+include("includes/classes/User.php");
 include("includes/classes/Artist.php");
 include("includes/classes/Album.php");
 include("includes/classes/Song.php");
+include("includes/classes/Playlist.php");
 
 //log user out on refresh
 //session_destroy();
 
 //checks to see if user is signed in if so move to index if not back to sign in page.
 if (isset($_SESSION['userLoggedIn'])) {
-    $userLoggedIn = $_SESSION['userLoggedIn'];
-    echo "<script>userLoggedIn = '$userLoggedIn';</script>";
+//    $userLoggedIn = $_SESSION['userLoggedIn'];
+    $userLoggedIn = new User($connection, $_SESSION['userLoggedIn']);
+    $username = $userLoggedIn->getUsername();
+    echo "<script>userLoggedIn = '$username';</script>";
 } else {
     header("LOCATION: register.php");
 }
