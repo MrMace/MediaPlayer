@@ -16,15 +16,14 @@
         <span class="message"></span>
         <button class="button" onclick="updateEmail('email')">Save</button>
 
-
     </div>
     <div class="container">
         <h1>Password</h1>
+        <input type="password" class="currentPass" name="currentPass" placeholder="Current Password">
+        <input type="password" class="newPass" name="newPass" placeholder="New Password" >
+        <input type="password" class="confirmPass" name="confirmPass" placeholder="Confirm New Password">
         <span class="message"></span>
-        <input type="password" class="currentPass" name="currentPass" placeholder="Current Password" value="<?php echo $userLoggedIn->getEmail(); ?>">
-        <input type="password" class="newPass" name="newPass" placeholder="New Password" value="<?php echo $userLoggedIn->getEmail(); ?>">
-        <input type="password" class="ConfirmPass" name="confirmPass" placeholder="Confirm New Password" value="<?php echo $userLoggedIn->getEmail(); ?>">
-        <button class="button" onclick="">Save</button>
+        <button class="button" onclick="updatePass('currentPass', 'newPass', 'confirmPass')">Save</button>
     </div>
 </div>
 
