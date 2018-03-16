@@ -2,19 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="47153553-d4a3-4748-ae9a-32f6d08ad13f" name="Default" comment="">
+      <change beforePath="" afterPath="$PROJECT_DIR$/assets/images/icons/activeUser.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/assets/images/icons/user.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/assets/images/placeHolder/ActivePlaylistIcon.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/assets/images/placeHolder/playlistIcon.png" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/assets/images/icons/ActiveRepeatBtn.png" afterPath="$PROJECT_DIR$/assets/images/icons/ActiveRepeatBtn.png" />
-      <change beforePath="$PROJECT_DIR$/assets/images/icons/ActiveShuffleBtn.png" afterPath="$PROJECT_DIR$/assets/images/icons/ActiveShuffleBtn.png" />
-      <change beforePath="$PROJECT_DIR$/assets/images/icons/ActiveVolMute.png" afterPath="$PROJECT_DIR$/assets/images/icons/ActiveVolMute.png" />
-      <change beforePath="$PROJECT_DIR$/assets/images/icons/Logo.png" afterPath="$PROJECT_DIR$/assets/images/icons/Logo.png" />
-      <change beforePath="$PROJECT_DIR$/assets/images/icons/MaxVolBtn.png" afterPath="$PROJECT_DIR$/assets/images/icons/MaxVolBtn.png" />
-      <change beforePath="$PROJECT_DIR$/assets/images/icons/repeatBtn.png" afterPath="$PROJECT_DIR$/assets/images/icons/repeatBtn.png" />
-      <change beforePath="$PROJECT_DIR$/assets/images/icons/search.png" afterPath="$PROJECT_DIR$/assets/images/icons/search.png" />
-      <change beforePath="$PROJECT_DIR$/assets/images/icons/shuffleBtn.png" afterPath="$PROJECT_DIR$/assets/images/icons/shuffleBtn.png" />
-      <change beforePath="$PROJECT_DIR$/css/register.css" afterPath="$PROJECT_DIR$/css/register.css" />
-      <change beforePath="$PROJECT_DIR$/css/style.css" afterPath="$PROJECT_DIR$/css/style.css" />
-      <change beforePath="$PROJECT_DIR$/includes/playerControlBar.php" afterPath="$PROJECT_DIR$/includes/playerControlBar.php" />
-      <change beforePath="$PROJECT_DIR$/register.php" afterPath="$PROJECT_DIR$/register.php" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -259,12 +251,7 @@
               <item name="MediaPlayer" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="assets" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="images" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="icons" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="MediaPlayer" type="b2602c69:ProjectViewProjectNode" />
-              <item name="MediaPlayer" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="css" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="placeHolder" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
             <path>
               <item name="MediaPlayer" type="b2602c69:ProjectViewProjectNode" />
@@ -343,14 +330,7 @@
       <workItem from="1519347321894" duration="1869000" />
       <workItem from="1519418721052" duration="134626000" />
       <workItem from="1520895574095" duration="4515000" />
-      <workItem from="1521155061200" duration="12609000" />
-    </task>
-    <task id="LOCAL-00002" summary="validation">
-      <created>1515971315375</created>
-      <option name="number" value="00002" />
-      <option name="presentableId" value="LOCAL-00002" />
-      <option name="project" value="LOCAL" />
-      <updated>1515971315375</updated>
+      <workItem from="1521155061200" duration="12678000" />
     </task>
     <task id="LOCAL-00003" summary="account class">
       <created>1515971741402</created>
@@ -688,11 +668,18 @@
       <option name="project" value="LOCAL" />
       <updated>1521209902780</updated>
     </task>
-    <option name="localTasksCounter" value="51" />
+    <task id="LOCAL-00051" summary="Styles">
+      <created>1521219349923</created>
+      <option name="number" value="00051" />
+      <option name="presentableId" value="LOCAL-00051" />
+      <option name="project" value="LOCAL" />
+      <updated>1521219349923</updated>
+    </task>
+    <option name="localTasksCounter" value="52" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="290350000" />
+    <option name="totallyTimeSpent" value="290419000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -705,7 +692,6 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32934782" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32853982" sideWeight="0.5119617" order="7" side_tool="true" content_ui="tabs" />
@@ -714,7 +700,7 @@
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32853982" sideWeight="0.48803827" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.17282608" sideWeight="0.49577168" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Remote Host" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32942432" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.12260128" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.12260128" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Docker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32963374" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -789,7 +775,6 @@
     <ignored-roots>
       <path value="$PROJECT_DIR$/Media-Player" />
     </ignored-roots>
-    <MESSAGE value="play btn and pause btn to work" />
     <MESSAGE value="WOrking with AJAX calls" />
     <MESSAGE value="AJAX calling started for songs, and artists" />
     <MESSAGE value="Ajax call album" />
@@ -814,7 +799,8 @@
     <MESSAGE value="email update" />
     <MESSAGE value="functionality Completed" />
     <MESSAGE value="Style" />
-    <option name="LAST_COMMIT_MESSAGE" value="Style" />
+    <MESSAGE value="Styles" />
+    <option name="LAST_COMMIT_MESSAGE" value="Styles" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
   <component name="XDebuggerManager">
