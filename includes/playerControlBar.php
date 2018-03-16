@@ -86,7 +86,7 @@ $jsonArray = json_encode($songArray);
 
 function setMute(){
     audioElement.audio.muted = !audioElement.audio.muted;
-    var imgName = audioElement.audio.muted? "ActiveVolMute.png": "muteBtn.png";
+    var imgName = audioElement.audio.muted? "ActiveVolMute.png": "maxVolBtn.png";
     $(".controlBtn.volume img").attr("src", "assets/images/icons/" + imgName);
 
 }
@@ -268,7 +268,7 @@ function shuffleArray(a) {
             <div class="content playerControls">
                 <div class="btns">
                     <button class="controlBtn shuffle" title="Shuffle Button" onclick="setShuffle()">
-                        <img src="assets/images/icons/shuffleBtn.png" alt="shuffle">
+                        <img src="assets/images/icons/shuffleBtn.png" alt="shuffle" class="shuffleBtn">
                     </button>
 
                     <button class="controlBtn previous" title="Previous Button" onclick="prevSong()">
@@ -288,7 +288,7 @@ function shuffleArray(a) {
                     </button>
 
                     <button class="controlBtn repeat" title="Repeat Button" onclick="setRepeat()">
-                        <img src="assets/images/icons/repeatBtn.png" alt="repeat">
+                        <img src="assets/images/icons/repeatBtn.png" alt="repeat" class="repeatBtn">
                     </button>
                 </div>
                 <div class="playbackBar">
@@ -307,7 +307,7 @@ function shuffleArray(a) {
         <div id="playerRight">
             <div class="volBar">
                 <button class="controlBtn volume" title="Volume Button" onclick="setMute()">
-                    <img src="assets/images/icons/MaxVolBtn.png" alt="Volume">
+                    <img src="assets/images/icons/MaxVolBtn.png" alt="Volume" class="volBtn">
                 </button>
 
                 <div class="progressBar">

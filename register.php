@@ -67,7 +67,7 @@ if (isset($_POST['regBtn'])) {
                 <p>
                     <?php echo $account->getError(Constants::$loginFailed); ?>
                     <label for="loginUsername">Username:</label>
-                    <input id="loginUsername" name="loginUsername" type="text" placeholder="Richard Nixon"
+                    <input id="loginUsername" name="loginUsername" type="text" placeholder="RichieNix"
                            value="<?php getFormInputVal('loginUsername') ?>" required>
                 </p>
                 <!--        login password-->

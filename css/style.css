@@ -14,7 +14,7 @@ body {
 * {
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
     letter-spacing: 1px;
-    color: #F4F4F4;
+    color: #373737;
 }
 
 img {
@@ -22,24 +22,35 @@ img {
 }
 
 .button {
-    color:white;
+    color:#373737;
     min-width: 100px;
     padding: 10px;
-    border-radius: 250px;
-    margin-bottom: 5px;
-    background-color: #C0B283;
+    /*border-radius: 250px;*/
+    margin: 5px;
     font-weight: 400;
     cursor: pointer;
-    border: 1px solid #ab9d6e;
+    border: none;
+    background-color: transparent;
+    border-bottom: 1px solid #373737;
+    font-size: 20px;
+
+
+
+
 }
 
 .button:hover {
-    transform: scale(1.1);
-    background-color: #C0B283;
+
+    color: #C0B283;
+    transform: scale(1.05);
+    background-color:#373737;
+
+
 }
 
 [role=link]{
     cursor: pointer;
+    color: #F4F4F4;
 }
 
 input:focus {
@@ -100,6 +111,15 @@ input:focus {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
+.gridItem .playlistImg img {
+    width: 100%;
+    box-shadow: none;
+}
+
+.gridItem:hover {
+    transform: scale(1.05);
+}
+
 .gridItemInfo {
     font-weight: 400;
     padding: 5px 0;
@@ -147,6 +167,8 @@ input:focus {
     margin-right: 15px;
     float: left;
     background-size: cover;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
 }
 
 #playerLeft .albumInfo {
@@ -200,10 +222,20 @@ input:focus {
     /*display: flex;*/
 /*}*/
 
-.btns .controlBtn img {
-    width: 100%;
-    height: auto;
+.volBtn {
+    width:25px;
 }
+.shuffleBtn {
+    width:25px;
+}
+.repeatBtn{
+    width:25px;
+}
+
+/*.btns .controlBtn img {*/
+    /*width: 100%;*/
+    /*height: auto;*/
+/*}*/
 
 
 .btns .controlBtn.play img,
@@ -388,12 +420,13 @@ width: 32px;
 
 .albumTopInfo .albumSectionRight h1 {
     margin-top: 0;
+    color:#373737;
 }
 
 .albumTopInfo .albumSectionRight p,
 .trackListRow span {
     font-weight: 200;
-    color: #686c7d;
+    color: #373737;
 }
 
 /*----------*/
@@ -406,11 +439,13 @@ width: 32px;
     list-style: none;
     padding: 15px 10px;
     height: 40px;
+    color:#373737;
 }
 
 .trackListRow:hover {
     background-color: #373737;
     color: #F4F4F4;
+    border-radius: 3px;
 }
 
 .trackListRow .trackCount {
@@ -432,6 +467,9 @@ width: 32px;
 .trackListRow .trackCount span {
     visibility: visible;
 }
+.trackListRow:hover .trackInfo span {
+    color:#F4F4F4;
+}
 
 .trackListRow:hover .trackCount span {
     visibility: hidden;
@@ -447,9 +485,18 @@ width: 32px;
     display: block;
 }
 
+
+
 .trackListRow .trackInfo .trackName {
-    color: white;
+    color: #373737;
     margin-bottom: 5px;
+}
+.trackListRow:hover .trackInfo .trackName{
+    color:#F4F4F4;
+}
+
+.trackListRow:hover .duration {
+    color:#F4F4F4;
 }
 
 .trackListRow .trackOptions {
@@ -477,7 +524,7 @@ width: 32px;
 /*SEarch*/
 
 .searchContainer {
-    background-color: rgba(21, 0, 21, 0.47) ;
+
     padding: 20px 25px;
 }
 
@@ -526,13 +573,12 @@ width: 32px;
 .playlistImg {
 
     padding: 10px;
-    background-color: #373737;
     border-radius: 3px;
-    border: 1px solid rgba(245, 245, 245, 0.71);
+    /*border: 1px solid #C0B283;*/
 }
 
 .playlistImg:hover{
-    border: 1px solid #C0B283;
+    /*border: 1px solid #C0B283;*/
     transform: scale(1.05);
 }
 
@@ -586,11 +632,11 @@ width: 32px;
 .playlistTopInfo .playlistSectionRight p,
 .trackListRow span {
     font-weight: 200;
-    color: #F4F4F4;
+    /*color: #F4F4F4;*/
 }
 .playlistPageImg {
     padding: 10px;
-    background-color: #373737;
+    /*background-color: #373737;*/
     border-radius: 3px;
     /*border: 1px solid #C0B283;*/
 }
@@ -651,6 +697,7 @@ width: 32px;
 .userBtn:hover {
     transform: scale(1.05);
     background-color:#373737;
+    border-radius:3px;
 }
 
 .userBtnLink {
@@ -688,7 +735,8 @@ width: 32px;
     text-align: center;
     padding: 20px;
     margin: 15px auto;
-    font-weight: 200
+    font-weight: 200;
+    color: #F4F4F4;
 }
 
 
