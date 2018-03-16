@@ -47,7 +47,7 @@ class Account
         $query = mysqli_query($this->connection, "SELECT * FROM users WHERE username='$userN' AND password='$pass'");
 
         if (mysqli_num_rows($query) == 1) {
-            return ture;
+            return true;
         } else {
             array_push($this->errorArray, Constants:: $loginFailed);
             return false;

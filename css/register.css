@@ -5,7 +5,7 @@ html, body {
 }
 
 #background {
-    background-color: #150817;
+    background-color: #373737;
     background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("../assets/images/backgroundImg/register.jpeg");
     /*background-image: url("../images/backgroundImg/register.jpeg");*/
     background-position: center;
@@ -18,7 +18,7 @@ html, body {
 }
 
 #loginContainer * {
-    color: whitesmoke;
+    color: #F4F4F4;
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-weight: normal;
     line-height: 2em;
@@ -48,7 +48,7 @@ html, body {
 #inputContainer input[type="email"] {
     background: transparent;
     border: 0;
-    border-bottom: 1px solid whitesmoke;
+    border-bottom: 1px solid #F4F4F4;
     line-height: 30px;
     height: 30px;
     display: block;
@@ -57,20 +57,20 @@ html, body {
 }
 
 ::-webkit-input-placeholder { /* WebKit, Blink, Edge */
-    color: whitesmoke;
+    color: #F4F4F4;
     font-family: Snell Roundhand cursive;
     font-size: 15px;
 }
 
 :-moz-placeholder { /* Mozilla Firefox 4 to 18 */
-    color: whitesmoke;
+    color: #F4F4F4;
     opacity: 1;
     font-family: Snell Roundhand cursive;
     font-size: 15px;
 }
 
 ::-moz-placeholder { /* Mozilla Firefox 19+ */
-    color: whitesmoke;
+    color: #F4F4F4;
     opacity: 1;
     font-family: Snell Roundhand cursive;
     font-size: 15px;
@@ -78,21 +78,21 @@ html, body {
 }
 
 :-ms-input-placeholder { /* Internet Explorer 10-11 */
-    color: whitesmoke;
+    color: #F4F4F4;
     font-family: Snell Roundhand cursive;
     font-size: 15px;
 
 }
 
 :-ms-input-placeholder { /* Microsoft Edge */
-    color: whitesmoke;
+    color: #F4F4F4;
     font-family: Snell Roundhand cursive;
     font-size: 15px;
 
 }
 
 ::placeholder { /* Most modern browsers support this now. */
-    color: whitesmoke;
+    color: #F4F4F4;
     font-family: Snell Roundhand cursive;
     font-size: 15px;
 
@@ -109,8 +109,8 @@ html, body {
     -webkit-border-radius: 100px;
     -moz-border-radius: 100px;
     border-radius: 5px;
-    border: 1.5px solid whitesmoke;
-    color: whitesmoke;
+    border: 1.5px solid #F4F4F4;
+    color: #F4F4F4;
     display: block;
     font-size: 15px;
     letter-spacing: 1px;
@@ -120,13 +120,14 @@ html, body {
 }
 
 #inputContainer button:hover {
-    background-color: purple;
+    background-color: #C0B283;
     font-size: 15px;
     letter-spacing: 1px;
     margin: 20px auto;
     height: 45px;
     width: 100%;
     cursor: pointer;
+    color:#373737;
 }
 
 .haveAccountText {
