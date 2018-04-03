@@ -8,6 +8,8 @@
 
 ?>
 
+
+
 <div id="navBarContainer">
     <nav class="navBar">
 
@@ -52,10 +54,8 @@
                     <img src="assets/images/icons/search.png" class="icon" alt="Search">
                 </span>
         </div>
-
-
-
     </nav>
+
 
 </div>
 

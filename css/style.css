@@ -44,6 +44,7 @@ img {
     color: #C0B283;
     transform: scale(1.05);
     background-color:#373737;
+    border-radius: 5px;
 
 
 }
@@ -409,6 +410,7 @@ width: 32px;
 
 .albumTopInfo .albumSectionLeft img {
     width: 100%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 .albumTopInfo .albumSectionRight {
@@ -657,6 +659,7 @@ width: 32px;
     padding: 10px 20px;
     box-sizing: border-box;
     font-weight: 400;
+    font-size: 14px;
     height: auto;
     cursor: pointer;
     color: #F4F4F4;
@@ -672,6 +675,16 @@ width: 32px;
 .optionMenu select {
     border:none;
     -webkit-appearance: none;
+}
+
+.optionMenu .item option {
+    color:#F4F4F4;
+}
+
+.optionMenu .item option:hover {
+    transform: scale(1.5);
+    color: #C0B283;
+    background-color: #373737;
 }
 
 

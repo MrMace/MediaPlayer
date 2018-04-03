@@ -35,6 +35,7 @@ if (isset($_SESSION['userLoggedIn'])) {
 ?>
 <html>
 <head>
+    <meta name="mobile-web-app-capable" content="yes">
     <title>Mace Media Player</title>
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <script src="js\lib\jquery-3.2.1.min .js"></script>
