@@ -41,7 +41,7 @@ if (isset($_SESSION['userLoggedIn'])) {
     <script src="js\lib\jquery-3.2.1.min .js"></script>
     <script src="js\script.js"></script>
 </head>
-<body>
+<body >
 
 <!--<script>-->
 <!---->
